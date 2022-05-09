@@ -15,6 +15,7 @@
 		005566382824C05E0099E506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005566362824C05E0099E506 /* LaunchScreen.storyboard */; };
 		00570D5C2827AC0600CA7B6E /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00570D5B2827AC0600CA7B6E /* RecordViewController.swift */; };
 		00F56BB02827A1B8003A2F39 /* cloth_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F56BAF2827A1B8003A2F39 /* cloth_data.swift */; };
+		07BCB7404E9488BBCDE2C2C8 /* Pods_ACloset.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD124C308415A2A9292BE994 /* Pods_ACloset.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		005566392824C05E0099E506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00570D5B2827AC0600CA7B6E /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		00F56BAF2827A1B8003A2F39 /* cloth_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cloth_data.swift; sourceTree = "<group>"; };
+		45C2912A8BE0801497932668 /* Pods-ACloset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACloset.release.xcconfig"; path = "Target Support Files/Pods-ACloset/Pods-ACloset.release.xcconfig"; sourceTree = "<group>"; };
+		D25E0CE1DD00968BDD95AC52 /* Pods-ACloset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACloset.debug.xcconfig"; path = "Target Support Files/Pods-ACloset/Pods-ACloset.debug.xcconfig"; sourceTree = "<group>"; };
+		DD124C308415A2A9292BE994 /* Pods_ACloset.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ACloset.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07BCB7404E9488BBCDE2C2C8 /* Pods_ACloset.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				0055662A2824C05C0099E506 /* ACloset */,
 				005566292824C05C0099E506 /* Products */,
+				820A25A07D024E448580A289 /* Pods */,
+				B6622B6F97ACC4CE3E7672F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +80,24 @@
 			path = ACloset;
 			sourceTree = "<group>";
 		};
+		820A25A07D024E448580A289 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D25E0CE1DD00968BDD95AC52 /* Pods-ACloset.debug.xcconfig */,
+				45C2912A8BE0801497932668 /* Pods-ACloset.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B6622B6F97ACC4CE3E7672F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD124C308415A2A9292BE994 /* Pods_ACloset.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0055663C2824C05E0099E506 /* Build configuration list for PBXNativeTarget "ACloset" */;
 			buildPhases = (
+				DC2F22A8BB38B037C1AC325D /* [CP] Check Pods Manifest.lock */,
 				005566242824C05C0099E506 /* Sources */,
 				005566252824C05C0099E506 /* Frameworks */,
 				005566262824C05C0099E506 /* Resources */,
+				033B29E5A10567BEDF39BA55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +165,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		033B29E5A10567BEDF39BA55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACloset/Pods-ACloset-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ACloset/Pods-ACloset-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ACloset/Pods-ACloset-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC2F22A8BB38B037C1AC325D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ACloset-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		005566242824C05C0099E506 /* Sources */ = {
@@ -290,6 +359,7 @@
 		};
 		0055663D2824C05E0099E506 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25E0CE1DD00968BDD95AC52 /* Pods-ACloset.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,6 +389,7 @@
 		};
 		0055663E2824C05E0099E506 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45C2912A8BE0801497932668 /* Pods-ACloset.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
