@@ -15,6 +15,7 @@
 		00951690282E527E009F6FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095168E282E527E009F6FBA /* LaunchScreen.storyboard */; };
 		00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951697282E735C009F6FBA /* ClosetViewController.swift */; };
 		0095169A282E73C9009F6FBA /* CallenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951699282E73C9009F6FBA /* CallenderViewController.swift */; };
+		5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB59246282E7C9A00A41A76 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		00951691282E527E009F6FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00951697282E735C009F6FBA /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		00951699282E73C9009F6FBA /* CallenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallenderViewController.swift; sourceTree = "<group>"; };
+		5DB59246282E7C9A00A41A76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				00951685282E527C009F6FBA /* SceneDelegate.swift */,
 				00951687282E527C009F6FBA /* ViewController.swift */,
 				00951689282E527C009F6FBA /* Main.storyboard */,
+				5DB59246282E7C9A00A41A76 /* LoginViewController.swift */,
 				0095168C282E527E009F6FBA /* Assets.xcassets */,
 				0095168E282E527E009F6FBA /* LaunchScreen.storyboard */,
 				00951691282E527E009F6FBA /* Info.plist */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */,
 				00951688282E527C009F6FBA /* ViewController.swift in Sources */,
 				00951684282E527C009F6FBA /* AppDelegate.swift in Sources */,
 				00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */,
