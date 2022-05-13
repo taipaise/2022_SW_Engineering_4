@@ -13,6 +13,8 @@
 		0095168B282E527C009F6FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00951689282E527C009F6FBA /* Main.storyboard */; };
 		0095168D282E527E009F6FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0095168C282E527E009F6FBA /* Assets.xcassets */; };
 		00951690282E527E009F6FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095168E282E527E009F6FBA /* LaunchScreen.storyboard */; };
+		00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951697282E735C009F6FBA /* ClosetViewController.swift */; };
+		0095169A282E73C9009F6FBA /* CallenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951699282E73C9009F6FBA /* CallenderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0095168C282E527E009F6FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0095168F282E527E009F6FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00951691282E527E009F6FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00951697282E735C009F6FBA /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		00951699282E73C9009F6FBA /* CallenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallenderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				0095168C282E527E009F6FBA /* Assets.xcassets */,
 				0095168E282E527E009F6FBA /* LaunchScreen.storyboard */,
 				00951691282E527E009F6FBA /* Info.plist */,
+				00951697282E735C009F6FBA /* ClosetViewController.swift */,
+				00951699282E73C9009F6FBA /* CallenderViewController.swift */,
 			);
 			path = thrhd;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				00951688282E527C009F6FBA /* ViewController.swift in Sources */,
 				00951684282E527C009F6FBA /* AppDelegate.swift in Sources */,
+				00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */,
+				0095169A282E73C9009F6FBA /* CallenderViewController.swift in Sources */,
 				00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
