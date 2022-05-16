@@ -15,6 +15,7 @@
 		00951690282E527E009F6FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095168E282E527E009F6FBA /* LaunchScreen.storyboard */; };
 		00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951697282E735C009F6FBA /* ClosetViewController.swift */; };
 		0095169A282E73C9009F6FBA /* CallenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951699282E73C9009F6FBA /* CallenderViewController.swift */; };
+		0C1AEA60ECCBD2337988C5DD /* Pods_thrhd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436468690846BD894B2ABF20 /* Pods_thrhd.framework */; };
 		5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB59246282E7C9A00A41A76 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +30,10 @@
 		00951691282E527E009F6FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00951697282E735C009F6FBA /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		00951699282E73C9009F6FBA /* CallenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallenderViewController.swift; sourceTree = "<group>"; };
+		436468690846BD894B2ABF20 /* Pods_thrhd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thrhd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB59246282E7C9A00A41A76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		733FD08650EE909744C9AA0C /* Pods-thrhd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrhd.release.xcconfig"; path = "Target Support Files/Pods-thrhd/Pods-thrhd.release.xcconfig"; sourceTree = "<group>"; };
+		817BAE2B6A33A29FDDE62920 /* Pods-thrhd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrhd.debug.xcconfig"; path = "Target Support Files/Pods-thrhd/Pods-thrhd.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1AEA60ECCBD2337988C5DD /* Pods_thrhd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				00951682282E527C009F6FBA /* thrhd */,
 				00951681282E527C009F6FBA /* Products */,
+				9295BA1AECF0B9BD2510CA96 /* Pods */,
+				375FEBDBC5B23A709502CE6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,23 @@
 			path = thrhd;
 			sourceTree = "<group>";
 		};
+		375FEBDBC5B23A709502CE6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				436468690846BD894B2ABF20 /* Pods_thrhd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9295BA1AECF0B9BD2510CA96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				817BAE2B6A33A29FDDE62920 /* Pods-thrhd.debug.xcconfig */,
+				733FD08650EE909744C9AA0C /* Pods-thrhd.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00951694282E527E009F6FBA /* Build configuration list for PBXNativeTarget "thrhd" */;
 			buildPhases = (
+				813599FE9C08C827D65557AC /* [CP] Check Pods Manifest.lock */,
 				0095167C282E527C009F6FBA /* Sources */,
 				0095167D282E527C009F6FBA /* Frameworks */,
 				0095167E282E527C009F6FBA /* Resources */,
+				2254D33007FCF193DF9029A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2254D33007FCF193DF9029A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-thrhd/Pods-thrhd-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-thrhd/Pods-thrhd-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-thrhd/Pods-thrhd-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813599FE9C08C827D65557AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-thrhd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0095167C282E527C009F6FBA /* Sources */ = {
@@ -294,6 +362,7 @@
 		};
 		00951695282E527E009F6FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 817BAE2B6A33A29FDDE62920 /* Pods-thrhd.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -307,6 +376,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +392,7 @@
 		};
 		00951696282E527E009F6FBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733FD08650EE909744C9AA0C /* Pods-thrhd.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -335,6 +406,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
