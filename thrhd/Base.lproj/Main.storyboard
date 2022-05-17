@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A0r-gG-mEl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A0r-gG-mEl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -135,8 +135,21 @@
                     <view key="view" contentMode="scaleToFill" id="tTc-pT-saa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zw-Nu-jnG" customClass="FSCalendar">
+                                <rect key="frame" x="30" y="118" width="354" height="660"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="GaD-kq-UGM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GaD-kq-UGM" firstAttribute="trailing" secondItem="4zw-Nu-jnG" secondAttribute="trailing" constant="30" id="7tM-mH-lTQ"/>
+                            <constraint firstItem="4zw-Nu-jnG" firstAttribute="centerX" secondItem="tTc-pT-saa" secondAttribute="centerX" id="O9p-2p-Gaa"/>
+                            <constraint firstItem="4zw-Nu-jnG" firstAttribute="centerY" secondItem="tTc-pT-saa" secondAttribute="centerY" id="Op6-KY-krA"/>
+                            <constraint firstItem="4zw-Nu-jnG" firstAttribute="top" secondItem="GaD-kq-UGM" secondAttribute="top" constant="30" id="YEm-iF-U2v"/>
+                            <constraint firstItem="4zw-Nu-jnG" firstAttribute="leading" secondItem="GaD-kq-UGM" secondAttribute="leading" constant="30" id="itj-4Y-jRc"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="VtV-Xo-0Kp"/>
                 </viewController>
@@ -194,6 +207,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f9J-6a-gxZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
