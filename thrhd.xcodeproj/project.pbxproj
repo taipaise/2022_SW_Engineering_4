@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C01D92837238200C8EC5F /* CalendarViewController.swift */; };
 		00951684282E527C009F6FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951683282E527C009F6FBA /* AppDelegate.swift */; };
 		00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951685282E527C009F6FBA /* SceneDelegate.swift */; };
 		00951688282E527C009F6FBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951687282E527C009F6FBA /* ViewController.swift */; };
@@ -14,12 +15,13 @@
 		0095168D282E527E009F6FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0095168C282E527E009F6FBA /* Assets.xcassets */; };
 		00951690282E527E009F6FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095168E282E527E009F6FBA /* LaunchScreen.storyboard */; };
 		00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951697282E735C009F6FBA /* ClosetViewController.swift */; };
-		0095169A282E73C9009F6FBA /* CallenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951699282E73C9009F6FBA /* CallenderViewController.swift */; };
+		00AFA07528372DDC008516C9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AFA07428372DDC008516C9 /* DetailViewController.swift */; };
 		0C1AEA60ECCBD2337988C5DD /* Pods_thrhd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436468690846BD894B2ABF20 /* Pods_thrhd.framework */; };
 		5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB59246282E7C9A00A41A76 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		005C01D92837238200C8EC5F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		00951680282E527C009F6FBA /* thrhd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thrhd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00951683282E527C009F6FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00951685282E527C009F6FBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +31,7 @@
 		0095168F282E527E009F6FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00951691282E527E009F6FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00951697282E735C009F6FBA /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
-		00951699282E73C9009F6FBA /* CallenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallenderViewController.swift; sourceTree = "<group>"; };
+		00AFA07428372DDC008516C9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		436468690846BD894B2ABF20 /* Pods_thrhd.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_thrhd.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB59246282E7C9A00A41A76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		733FD08650EE909744C9AA0C /* Pods-thrhd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrhd.release.xcconfig"; path = "Target Support Files/Pods-thrhd/Pods-thrhd.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,13 +74,14 @@
 				00951683282E527C009F6FBA /* AppDelegate.swift */,
 				00951685282E527C009F6FBA /* SceneDelegate.swift */,
 				00951687282E527C009F6FBA /* ViewController.swift */,
-				00951689282E527C009F6FBA /* Main.storyboard */,
 				5DB59246282E7C9A00A41A76 /* LoginViewController.swift */,
+				00951697282E735C009F6FBA /* ClosetViewController.swift */,
+				005C01D92837238200C8EC5F /* CalendarViewController.swift */,
+				00AFA07428372DDC008516C9 /* DetailViewController.swift */,
+				00951689282E527C009F6FBA /* Main.storyboard */,
 				0095168C282E527E009F6FBA /* Assets.xcassets */,
 				0095168E282E527E009F6FBA /* LaunchScreen.storyboard */,
 				00951691282E527E009F6FBA /* Info.plist */,
-				00951697282E735C009F6FBA /* ClosetViewController.swift */,
-				00951699282E73C9009F6FBA /* CallenderViewController.swift */,
 			);
 			path = thrhd;
 			sourceTree = "<group>";
@@ -215,12 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */,
 				5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */,
 				00951688282E527C009F6FBA /* ViewController.swift in Sources */,
 				00951684282E527C009F6FBA /* AppDelegate.swift in Sources */,
 				00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */,
-				0095169A282E73C9009F6FBA /* CallenderViewController.swift in Sources */,
 				00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */,
+				00AFA07528372DDC008516C9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
