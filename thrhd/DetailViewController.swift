@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.myLabel.text = date
     }}
-    
+    //ww
 
     /*
     // MARK: - Navigation
