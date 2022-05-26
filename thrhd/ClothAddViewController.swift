@@ -87,6 +87,7 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
         print(appDelegate.clothInfo[appDelegate.cnt].clothName)
         appDelegate.cnt += 1
         print("struct array length: ", appDelegate.clothInfo.count)
+        self.navigationController?.popViewController(animated: true)
     }//data 추가 버튼
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let mediaType = info[UIImagePickerController.InfoKey.mediaType] as! String

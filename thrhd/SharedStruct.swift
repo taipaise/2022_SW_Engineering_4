@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct imageInfo{
+    
     let clothName: String
     let clothImage: UIImage
     let clothCategory: String

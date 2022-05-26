@@ -28,7 +28,7 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         print("collection view load")
         
     }
- 
+    
     //data source event
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return appDelegate.clothInfo.count
