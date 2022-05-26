@@ -10,10 +10,10 @@ import UIKit
 
 struct imageInfo{
     
-    let clothName: String
-    let clothImage: UIImage
-    let clothCategory: String
-    let seasonCategory: String
+    var clothName: String
+    var clothImage: UIImage
+    var clothCategory: String
+    var seasonCategory: String
     
     init(clothName: String, clothImage: UIImage, clothCategory: String, seasonCategory: String){
         self.clothName = clothName

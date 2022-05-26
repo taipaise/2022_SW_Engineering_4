@@ -18,13 +18,15 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
     
     let imagePickerVC: UIImagePickerController! = UIImagePickerController() //선택된 이미지 데이터
     var captureImage:UIImage!
-    var clothText: String = ""
-    var seasonText: String = ""
+    var clothText: String = "아우터"
+    var seasonText: String = "봄"
     var clonameText: String = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clothText = "아우터"
+        seasonText = "봄"
 
     }
     
@@ -76,6 +78,7 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
     }else{
         print("error")
         }
+        
     }
     
     @IBAction func onBtnAddData(_ sender: UIButton) {

@@ -47,6 +47,9 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
     //normal event
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("item selected: ", indexPath.row)
+        let newVC = self.storyboard?.instantiateViewController(withIdentifier: "editVC") as! ClothInfoEditViewController
+        appDelegate.idx = indexPath.row
+        self.navigationController?.pushViewController(newVC, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

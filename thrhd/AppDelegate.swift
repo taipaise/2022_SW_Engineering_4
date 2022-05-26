@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var clothInfo: [imageInfo] = [imageInfo]()
     var cnt: Int = 0
-    
+    var idx: Int = 0 //옷 정보 수정 page의 index
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true

@@ -20,6 +20,7 @@
 		5D6D39A7283E809300A2A8E2 /* SharedStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39A6283E809300A2A8E2 /* SharedStruct.swift */; };
 		5D6D39A9283E811300A2A8E2 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39A8283E811300A2A8E2 /* MyCollectionViewCell.swift */; };
 		5D6D39AB283E821F00A2A8E2 /* ClothAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39AA283E821F00A2A8E2 /* ClothAddViewController.swift */; };
+		5D6D39B3283F51D600A2A8E2 /* ClothInfoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39B2283F51D600A2A8E2 /* ClothInfoEditViewController.swift */; };
 		5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB59246282E7C9A00A41A76 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		5D6D39A6283E809300A2A8E2 /* SharedStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStruct.swift; sourceTree = "<group>"; };
 		5D6D39A8283E811300A2A8E2 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D6D39AA283E821F00A2A8E2 /* ClothAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothAddViewController.swift; sourceTree = "<group>"; };
+		5D6D39B2283F51D600A2A8E2 /* ClothInfoEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothInfoEditViewController.swift; sourceTree = "<group>"; };
 		5DB59246282E7C9A00A41A76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		733FD08650EE909744C9AA0C /* Pods-thrhd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrhd.release.xcconfig"; path = "Target Support Files/Pods-thrhd/Pods-thrhd.release.xcconfig"; sourceTree = "<group>"; };
 		817BAE2B6A33A29FDDE62920 /* Pods-thrhd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrhd.debug.xcconfig"; path = "Target Support Files/Pods-thrhd/Pods-thrhd.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				005C01D92837238200C8EC5F /* CalendarViewController.swift */,
 				00AFA07428372DDC008516C9 /* DetailViewController.swift */,
 				00951689282E527C009F6FBA /* Main.storyboard */,
+				5D6D39B2283F51D600A2A8E2 /* ClothInfoEditViewController.swift */,
 				5D6D39AA283E821F00A2A8E2 /* ClothAddViewController.swift */,
 				5D6D39A8283E811300A2A8E2 /* MyCollectionViewCell.swift */,
 				0095168C282E527E009F6FBA /* Assets.xcassets */,
@@ -237,6 +240,7 @@
 				00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */,
 				00AFA07528372DDC008516C9 /* DetailViewController.swift in Sources */,
 				5D6D39AB283E821F00A2A8E2 /* ClothAddViewController.swift in Sources */,
+				5D6D39B3283F51D600A2A8E2 /* ClothInfoEditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
