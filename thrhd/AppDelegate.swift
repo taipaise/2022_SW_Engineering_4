@@ -8,9 +8,13 @@
 import UIKit
 
 @main
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var clothInfo: [imageInfo] = [imageInfo]()
+    
+    var recordInfo : [record] = [record]()
+    
     var cnt: Int = 0
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

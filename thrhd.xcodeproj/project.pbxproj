@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0038FEDC283F587400F67FE9 /* RecordAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */; };
 		005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C01D92837238200C8EC5F /* CalendarViewController.swift */; };
 		00951684282E527C009F6FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951683282E527C009F6FBA /* AppDelegate.swift */; };
 		00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951685282E527C009F6FBA /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAddViewController.swift; sourceTree = "<group>"; };
 		005C01D92837238200C8EC5F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		00951680282E527C009F6FBA /* thrhd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thrhd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00951683282E527C009F6FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				00951689282E527C009F6FBA /* Main.storyboard */,
 				5D6D39AA283E821F00A2A8E2 /* ClothAddViewController.swift */,
 				5D6D39A8283E811300A2A8E2 /* MyCollectionViewCell.swift */,
+				0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */,
 				0095168C282E527E009F6FBA /* Assets.xcassets */,
 				0095168E282E527E009F6FBA /* LaunchScreen.storyboard */,
 				00951691282E527E009F6FBA /* Info.plist */,
@@ -227,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0038FEDC283F587400F67FE9 /* RecordAddViewController.swift in Sources */,
 				005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */,
 				5D6D39A7283E809300A2A8E2 /* SharedStruct.swift in Sources */,
 				5D6D39A9283E811300A2A8E2 /* MyCollectionViewCell.swift in Sources */,
