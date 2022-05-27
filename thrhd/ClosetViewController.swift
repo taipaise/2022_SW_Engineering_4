@@ -72,5 +72,6 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         refresh.endRefreshing()
         collectionView.reloadData()
     }
+    
    
 }

@@ -21,6 +21,7 @@ struct imageInfo{
         self.clothCategory = clothCategory
         self.seasonCategory = seasonCategory
     }
+    
 }
 
 struct record{

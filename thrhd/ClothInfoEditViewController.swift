@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class ClothInfoEditViewController: UIViewController {
 
@@ -41,6 +42,11 @@ class ClothInfoEditViewController: UIViewController {
         appDelegate.clothInfo[appDelegate.idx].clothName = changeCloName.text!
         appDelegate.clothInfo[appDelegate.idx].clothCategory = clothText
         appDelegate.clothInfo[appDelegate.idx].seasonCategory = seasonText
+        
+        self.view.makeToast("수정되었습니다.", duration: 2.0, position: .bottom)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.navigationController?.popViewController(animated: true)
+        }
         
         
     }
