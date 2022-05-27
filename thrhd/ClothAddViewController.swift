@@ -7,6 +7,7 @@
 
 import UIKit
 import MobileCoreServices//포토앨범, 카메라 기능 추가
+import Toast_Swift
 
 class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -79,7 +80,9 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
         print("error")
         }
         
+
     }
+
     
     @IBAction func onBtnAddData(_ sender: UIButton) {
         clonameText = clothNameTxt.text!
@@ -90,7 +93,12 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
         print(appDelegate.clothInfo[appDelegate.cnt].clothName)
         appDelegate.cnt += 1
         print("struct array length: ", appDelegate.clothInfo.count)
-        self.navigationController?.popViewController(animated: true)
+        
+        self.view.makeToast("추가되었습니다.", duration: 2.0, position: .bottom)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }//data 추가 버튼
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let mediaType = info[UIImagePickerController.InfoKey.mediaType] as! String
@@ -107,6 +115,7 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
             //피커뷰 창을 닫아줌
             self.dismiss(animated: true, completion: nil)
         }
+        
     }
     
     
