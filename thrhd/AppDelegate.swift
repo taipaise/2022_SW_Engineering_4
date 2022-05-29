@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var clothInfo: [imageInfo] = [imageInfo]()
-    
+    var clothName = [String]()
     var recordInfo : [record] = [record]()
     
     var cnt: Int = 0

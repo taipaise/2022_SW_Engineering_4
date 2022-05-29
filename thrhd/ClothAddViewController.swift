@@ -87,7 +87,7 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
     @IBAction func onBtnAddData(_ sender: UIButton) {
         clonameText = clothNameTxt.text!
         appDelegate.clothInfo.append(imageInfo(clothName: clonameText, clothImage: captureImage, clothCategory: clothText, seasonCategory: seasonText))
-        
+        appDelegate.clothName.append(clonameText)
         
         print(clonameText, clothText, seasonText)
         print(appDelegate.clothInfo[appDelegate.cnt].clothName)
