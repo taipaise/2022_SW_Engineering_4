@@ -22,6 +22,9 @@
 		5D6D39A9283E811300A2A8E2 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39A8283E811300A2A8E2 /* MyCollectionViewCell.swift */; };
 		5D6D39AB283E821F00A2A8E2 /* ClothAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39AA283E821F00A2A8E2 /* ClothAddViewController.swift */; };
 		5D6D39B3283F51D600A2A8E2 /* ClothInfoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39B2283F51D600A2A8E2 /* ClothInfoEditViewController.swift */; };
+		5D6D39B52843B2CD00A2A8E2 /* FindIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39B42843B2CC00A2A8E2 /* FindIdViewController.swift */; };
+		5D6D39B72843B2E300A2A8E2 /* FindPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39B62843B2E300A2A8E2 /* FindPwViewController.swift */; };
+		5D6D39B92843B30200A2A8E2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D39B82843B30200A2A8E2 /* SignUpViewController.swift */; };
 		5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB59246282E7C9A00A41A76 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,9 @@
 		5D6D39A8283E811300A2A8E2 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D6D39AA283E821F00A2A8E2 /* ClothAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothAddViewController.swift; sourceTree = "<group>"; };
 		5D6D39B2283F51D600A2A8E2 /* ClothInfoEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothInfoEditViewController.swift; sourceTree = "<group>"; };
+		5D6D39B42843B2CC00A2A8E2 /* FindIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIdViewController.swift; sourceTree = "<group>"; };
+		5D6D39B62843B2E300A2A8E2 /* FindPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPwViewController.swift; sourceTree = "<group>"; };
+		5D6D39B82843B30200A2A8E2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5DB59246282E7C9A00A41A76 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		733FD08650EE909744C9AA0C /* Pods-thrhd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrhd.release.xcconfig"; path = "Target Support Files/Pods-thrhd/Pods-thrhd.release.xcconfig"; sourceTree = "<group>"; };
 		817BAE2B6A33A29FDDE62920 /* Pods-thrhd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-thrhd.debug.xcconfig"; path = "Target Support Files/Pods-thrhd/Pods-thrhd.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +96,9 @@
 				005C01D92837238200C8EC5F /* CalendarViewController.swift */,
 				00AFA07428372DDC008516C9 /* DetailViewController.swift */,
 				00951689282E527C009F6FBA /* Main.storyboard */,
+				5D6D39B42843B2CC00A2A8E2 /* FindIdViewController.swift */,
+				5D6D39B62843B2E300A2A8E2 /* FindPwViewController.swift */,
+				5D6D39B82843B30200A2A8E2 /* SignUpViewController.swift */,
 				5D6D39B2283F51D600A2A8E2 /* ClothInfoEditViewController.swift */,
 				5D6D39AA283E821F00A2A8E2 /* ClothAddViewController.swift */,
 				5D6D39A8283E811300A2A8E2 /* MyCollectionViewCell.swift */,
@@ -233,13 +242,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D6D39B72843B2E300A2A8E2 /* FindPwViewController.swift in Sources */,
 				0038FEDC283F587400F67FE9 /* RecordAddViewController.swift in Sources */,
 				005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */,
 				5D6D39A7283E809300A2A8E2 /* SharedStruct.swift in Sources */,
+				5D6D39B52843B2CD00A2A8E2 /* FindIdViewController.swift in Sources */,
 				5D6D39A9283E811300A2A8E2 /* MyCollectionViewCell.swift in Sources */,
 				5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */,
 				00951688282E527C009F6FBA /* ViewController.swift in Sources */,
 				00951684282E527C009F6FBA /* AppDelegate.swift in Sources */,
+				5D6D39B92843B30200A2A8E2 /* SignUpViewController.swift in Sources */,
 				00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */,
 				00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */,
 				00AFA07528372DDC008516C9 /* DetailViewController.swift in Sources */,

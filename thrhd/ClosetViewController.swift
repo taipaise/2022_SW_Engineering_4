@@ -29,6 +29,12 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        collectionView.reloadData()
+        print("appear")
+    }
+    
     //data source event
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return appDelegate.clothInfo.count
