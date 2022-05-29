@@ -8,13 +8,35 @@
 import UIKit
 
 class RecordAddViewController: UIViewController {
-
+    @IBOutlet weak var starSeg: UISegmentedControl!
+    
+    var starRating = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-// Do any additional setup after loading the view.
+
+        
+        
     }
 
 
+    @IBAction func starSegAction(_ sender: Any) {
+        switch starSeg.selectedSegmentIndex {
+        case 0:
+            starRating = "0"
+        case 1 :
+            starRating = "1"
+        case 2:
+            starRating = "2"
+        case 3:
+            starRating = "3"
+        case 4:
+            starRating = "4"
+        case 5:
+            starRating = "5"
+        default:
+            break
+        }
+    }
     /*
     // MARK: - Navigation
 
