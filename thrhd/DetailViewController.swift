@@ -32,13 +32,44 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var top: UIImageView!
+    @IBOutlet weak var bottom: UIImageView!
+    @IBOutlet weak var outer: UIImageView!
+    @IBOutlet weak var shoes: UIImageView!
+    
+    @IBOutlet weak var top_label: UILabel!
+    @IBOutlet weak var bottom_label: UILabel!
+    @IBOutlet weak var outer_label: UILabel!
+    @IBOutlet weak var shoes_label: UILabel!
+    
+    @IBOutlet weak var star1: UIImageView!
+    @IBOutlet weak var star2: UIImageView!
+    @IBOutlet weak var star3: UIImageView!
+    @IBOutlet weak var star4: UIImageView!
+    @IBOutlet weak var star5: UIImageView!
+    
+    
     @IBOutlet weak var myLabel: UILabel!
 
     
     var date: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.myLabel.text = date
+        top.image = #imageLiteral(resourceName: "null")
+        bottom.image = #imageLiteral(resourceName: "null")
+        outer.image = #imageLiteral(resourceName: "null")
+        shoes.image = #imageLiteral(resourceName: "null")
+        star1.image = #imageLiteral(resourceName: "empty_star")
+        star2.image = #imageLiteral(resourceName: "empty_star")
+        star3.image = #imageLiteral(resourceName: "empty_star")
+        star4.image = #imageLiteral(resourceName: "empty_star")
+        star5.image = #imageLiteral(resourceName: "empty_star")
+        top_label.text = "없음"
+        bottom_label.text = "없음"
+        outer_label.text = "없음"
+        shoes_label.text = "없음"
     }
 }
 
