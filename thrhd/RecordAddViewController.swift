@@ -128,8 +128,8 @@ class RecordAddViewController: UIViewController {
             //선택한 Item을 TextField에 넣어준다.
             self!.tfInput1.text = item
             self!.topName = item
-            if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.clothName == item}){
-                self!.top.image = self!.appDelegate.clothInfo[cloIndex].clothImage
+            if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
+                self!.top.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
             }
             self!.ivIcon1.image = UIImage.init(named: "downarrow.png")
         }
@@ -155,8 +155,8 @@ class RecordAddViewController: UIViewController {
             //선택한 Item을 TextField에 넣어준다.
             self!.bottomName = item
             self!.tfInput2.text = item
-            if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.clothName == item}){
-                self!.bottom.image = self!.appDelegate.clothInfo[cloIndex].clothImage
+            if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
+                self!.bottom.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
             }
             self!.ivIcon2.image = UIImage.init(named: "downarrow.png")
         }
@@ -182,8 +182,8 @@ class RecordAddViewController: UIViewController {
             //선택한 Item을 TextField에 넣어준다.
             self!.outerName = item
             self!.tfInput3.text = item
-            if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.clothName == item}){
-                self!.outer.image = self!.appDelegate.clothInfo[cloIndex].clothImage
+            if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
+                self!.outer.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
             }
             self!.ivIcon3.image = UIImage.init(named: "downarrow.png")
         }
@@ -210,8 +210,8 @@ class RecordAddViewController: UIViewController {
             //선택한 Item을 TextField에 넣어준다.
             self!.shoesName = item
             self!.tfInput4.text = item
-            if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.clothName == item}){
-                self!.shoes.image = self!.appDelegate.clothInfo[cloIndex].clothImage
+            if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
+                self!.shoes.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
             }
             self!.ivIcon4.image = UIImage.init(named: "downarrow.png")
         }
@@ -296,13 +296,13 @@ class RecordAddViewController: UIViewController {
 
         appDelegate.recordInfo.append(record(top: topName, bottom: bottomName, outer: outerName, shoes: shoesName, date: date, rating: rating, comment: comment))
 
-        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_top)
-        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_bottom)
-        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_outer)
-        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_shoes)
-        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_shoes)
-        print(appDelegate.recordInfo[appDelegate.recCnt].rating)
-        print(appDelegate.recordInfo[appDelegate.recCnt].comment)
+        print(appDelegate.recordInfo[appDelegate.recCnt].getCloTop())
+        print(appDelegate.recordInfo[appDelegate.recCnt].getCloBtm())
+        print(appDelegate.recordInfo[appDelegate.recCnt].getCloOut())
+        print(appDelegate.recordInfo[appDelegate.recCnt].getCloOut())
+        print(appDelegate.recordInfo[appDelegate.recCnt].getClosho())
+        print(appDelegate.recordInfo[appDelegate.recCnt].getCloRate())
+        print(appDelegate.recordInfo[appDelegate.recCnt].getCloCom())
         appDelegate.recCnt += 1
         print("record struct array length: ", appDelegate.recordInfo.count)
 
