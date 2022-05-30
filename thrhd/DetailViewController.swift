@@ -31,6 +31,7 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     

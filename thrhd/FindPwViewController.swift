@@ -8,7 +8,7 @@
 import UIKit
 
 class FindPwViewController: UIViewController {
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){self.view.endEditing(true) }
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {

@@ -9,7 +9,7 @@ import UIKit
 import Toast_Swift
 
 class ClothInfoEditViewController: UIViewController {
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){self.view.endEditing(true) }
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBOutlet weak var editCloImage: UIImageView!
