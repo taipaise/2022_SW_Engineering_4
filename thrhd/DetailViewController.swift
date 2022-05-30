@@ -31,7 +31,12 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    
+    
+    @IBOutlet var all: UIView!
+    
     @IBOutlet weak var top: UIImageView!
     @IBOutlet weak var bottom: UIImageView!
     @IBOutlet weak var outer: UIImageView!
@@ -51,6 +56,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
 
+    @IBOutlet weak var labelComment: UILabel!
     
     var date: String!
     
@@ -59,13 +65,16 @@ class DetailViewController: UIViewController {
         recordAddVC.date = date
         self.navigationController?.pushViewController(recordAddVC, animated: true)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        self.viewDidLoad()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.myLabel.text = date
-        top.image = #imageLiteral(resourceName: "null")
-        bottom.image = #imageLiteral(resourceName: "null")
-        outer.image = #imageLiteral(resourceName: "null")
-        shoes.image = #imageLiteral(resourceName: "null")
+        top.image = #imageLiteral(resourceName: "top")
+        bottom.image = #imageLiteral(resourceName: "bottom")
+        outer.image = #imageLiteral(resourceName: "outer")
+        shoes.image = #imageLiteral(resourceName: "shoes")
         star1.image = #imageLiteral(resourceName: "empty_star")
         star2.image = #imageLiteral(resourceName: "empty_star")
         star3.image = #imageLiteral(resourceName: "empty_star")
@@ -75,9 +84,69 @@ class DetailViewController: UIViewController {
         bottom_label.text = "없음"
         outer_label.text = "없음"
         shoes_label.text = "없음"
+        if let dateInx = self.appDelegate.recordInfo.firstIndex(where: {$0.date == date}){
+            //상의 기록 설정
+            if let topIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.clothName == appDelegate.recordInfo[dateInx].cloth_top}){
+                self.top.image = self.appDelegate.clothInfo[topIndex].clothImage
+                self.top_label.text = self.appDelegate.clothInfo[topIndex].clothName
+            }
+            //하의 기록 설정
+            if let bottomIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.clothName == appDelegate.recordInfo[dateInx].cloth_bottom}){
+                self.bottom.image = self.appDelegate.clothInfo[bottomIndex].clothImage
+                self.bottom_label.text = self.appDelegate.clothInfo[bottomIndex].clothName
+            }
+            //아우터 기록 설정
+            if let outerIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.clothName == appDelegate.recordInfo[dateInx].cloth_outer}){
+                self.outer.image = self.appDelegate.clothInfo[outerIndex].clothImage
+                self.outer_label.text = self.appDelegate.clothInfo[outerIndex].clothName
+            }
+            //신발 기록 설정
+            if let shoesIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.clothName == appDelegate.recordInfo[dateInx].cloth_shoes}){
+                self.shoes.image = self.appDelegate.clothInfo[shoesIndex].clothImage
+                self.shoes_label.text = self.appDelegate.clothInfo[shoesIndex].clothName
+            }
+            switch appDelegate.recordInfo[dateInx].rating{
+            case 1:
+                star1.image = #imageLiteral(resourceName: "full_star")
+                star2.image = #imageLiteral(resourceName: "empty_star")
+                star3.image = #imageLiteral(resourceName: "empty_star")
+                star4.image = #imageLiteral(resourceName: "empty_star")
+                star5.image = #imageLiteral(resourceName: "empty_star")
+            case 2:
+                star1.image = #imageLiteral(resourceName: "full_star")
+                star2.image = #imageLiteral(resourceName: "full_star")
+                star3.image = #imageLiteral(resourceName: "empty_star")
+                star4.image = #imageLiteral(resourceName: "empty_star")
+                star5.image = #imageLiteral(resourceName: "empty_star")
+            case 3:
+                star1.image = #imageLiteral(resourceName: "full_star")
+                star2.image = #imageLiteral(resourceName: "full_star")
+                star3.image = #imageLiteral(resourceName: "full_star")
+                star4.image = #imageLiteral(resourceName: "empty_star")
+                star5.image = #imageLiteral(resourceName: "empty_star")
+            case 4:
+                star1.image = #imageLiteral(resourceName: "full_star")
+                star2.image = #imageLiteral(resourceName: "full_star")
+                star3.image = #imageLiteral(resourceName: "full_star")
+                star4.image = #imageLiteral(resourceName: "full_star")
+                star5.image = #imageLiteral(resourceName: "empty_star")
+            case 5:
+                star1.image = #imageLiteral(resourceName: "full_star")
+                star2.image = #imageLiteral(resourceName: "full_star")
+                star3.image = #imageLiteral(resourceName: "full_star")
+                star4.image = #imageLiteral(resourceName: "full_star")
+                star5.image = #imageLiteral(resourceName: "full_star")
+            default:
+                star1.image = #imageLiteral(resourceName: "empty_star")
+                star2.image = #imageLiteral(resourceName: "empty_star")
+                star3.image = #imageLiteral(resourceName: "empty_star")
+                star4.image = #imageLiteral(resourceName: "empty_star")
+                star5.image = #imageLiteral(resourceName: "empty_star")
+            }
+            labelComment.text = appDelegate.recordInfo[dateInx].comment
+        }
     }
 }
-
     //ww
 
     /*
