@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A0r-gG-mEl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A0r-gG-mEl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -693,7 +693,7 @@
         <scene sceneID="Qzu-DN-TL2">
             <objects>
                 <viewController storyboardIdentifier="DetailViewController" id="F0c-Tf-n16" customClass="DetailViewController" customModule="thrhd" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xdh-RH-diC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="xdh-RH-diC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -932,8 +932,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="0YY-Db-gpn"/>
                     <connections>
+                        <outlet property="all" destination="xdh-RH-diC" id="yxF-hM-7JB"/>
                         <outlet property="bottom" destination="YaX-pp-Gvt" id="egB-1h-cFg"/>
                         <outlet property="bottom_label" destination="aU7-mO-dlo" id="Uvm-mo-J7L"/>
+                        <outlet property="labelComment" destination="ton-jS-gR7" id="NhX-vu-WA5"/>
                         <outlet property="myLabel" destination="ggm-Tm-jDf" id="I4I-fK-rdH"/>
                         <outlet property="outer" destination="pIx-rJ-LWW" id="Hen-Nr-L3Q"/>
                         <outlet property="outer_label" destination="NXM-1n-sGd" id="kEH-ET-N9s"/>
@@ -950,7 +952,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3l-ou-7Ri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5156.521739130435" y="393.75"/>
+            <point key="canvasLocation" x="4455" y="394"/>
         </scene>
         <!--Record Add View Controller-->
         <scene sceneID="UlE-j9-1uL">
@@ -1478,7 +1480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="emW-eF-mXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5857.971014492754" y="393.75"/>
+            <point key="canvasLocation" x="5157" y="394"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="Og8-HG-5CQ">

@@ -67,10 +67,10 @@ class RecordAddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        top.image = #imageLiteral(resourceName: "null")
-        bottom.image = #imageLiteral(resourceName: "null")
-        outer.image = #imageLiteral(resourceName: "null")
-        shoes.image = #imageLiteral(resourceName: "null")
+        top.image = #imageLiteral(resourceName: "top")
+        bottom.image = #imageLiteral(resourceName: "bottom")
+        outer.image = #imageLiteral(resourceName: "outer")
+        shoes.image = #imageLiteral(resourceName: "shoes")
         star1.image = #imageLiteral(resourceName: "empty_star")
         star2.image = #imageLiteral(resourceName: "empty_star")
         star3.image = #imageLiteral(resourceName: "empty_star")
@@ -95,12 +95,12 @@ class RecordAddViewController: UIViewController {
         dropdown2.dismissMode = .automatic // 팝업을 닫을 모드 설정
         dropdown3.dismissMode = .automatic // 팝업을 닫을 모드 설정
         dropdown4.dismissMode = .automatic // 팝업을 닫을 모드 설정
-
-        tfInput1.text = "선택해주세요."
-        tfInput2.text = "선택해주세요."
-        tfInput3.text = "선택해주세요."
-        tfInput4.text = "선택해주세요."
-
+ 
+        tfInput1.text = "상의(no_item)"
+        tfInput2.text = "하의(no_item)"
+        tfInput3.text = "아우터(no_item)"
+        tfInput4.text = "신발(no_item)"
+            
         ivIcon1.tintColor = UIColor.gray
         ivIcon2.tintColor = UIColor.gray
         ivIcon3.tintColor = UIColor.gray
