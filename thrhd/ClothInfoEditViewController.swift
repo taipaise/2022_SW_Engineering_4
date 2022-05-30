@@ -32,18 +32,18 @@ class ClothInfoEditViewController: UIViewController {
         
         clothText = "아우터"
         seasonText = "봄"
-        editCloImage.image = appDelegate.clothInfo[appDelegate.idx].clothImage
-        editCloName.text = appDelegate.clothInfo[appDelegate.idx].clothName
-        editClocate.text = appDelegate.clothInfo[appDelegate.idx].clothCategory
-        editClosea.text = appDelegate.clothInfo[appDelegate.idx].seasonCategory
+        editCloImage.image = appDelegate.clothInfo[appDelegate.idx].getCloImg()
+        editCloName.text = appDelegate.clothInfo[appDelegate.idx].getCloName()
+        editClocate.text = appDelegate.clothInfo[appDelegate.idx].getCloCate()
+        editClosea.text = appDelegate.clothInfo[appDelegate.idx].getSeaCate()
         
         
     }
     
     @IBAction func onBtnEdit(_ sender: UIButton) {
-        appDelegate.clothInfo[appDelegate.idx].clothName = changeCloName.text!
-        appDelegate.clothInfo[appDelegate.idx].clothCategory = clothText
-        appDelegate.clothInfo[appDelegate.idx].seasonCategory = seasonText
+        appDelegate.clothInfo[appDelegate.idx].setCloName(ClothName: changeCloName.text!)
+        appDelegate.clothInfo[appDelegate.idx].setCloCate(CloCate: clothText)
+        appDelegate.clothInfo[appDelegate.idx].setSeaCate(SeaCate: seasonText)
         
         self.view.makeToast("수정되었습니다.", duration: 2.0, position: .bottom)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {

@@ -10,10 +10,10 @@ import UIKit
 
 struct imageInfo{
     
-    var clothName: String
-    var clothImage: UIImage
-    var clothCategory: String
-    var seasonCategory: String
+    private var clothName: String
+    private var clothImage: UIImage
+    private var clothCategory: String
+    private var seasonCategory: String
     
     init(clothName: String, clothImage: UIImage, clothCategory: String, seasonCategory: String){
         self.clothName = clothName
@@ -22,16 +22,41 @@ struct imageInfo{
         self.seasonCategory = seasonCategory
     }
     
+    func getCloName() -> String{
+        return self.clothName
+    }
+    func getCloImg() -> UIImage{
+        return self.clothImage
+    }
+    func getCloCate() -> String{
+        return self.clothCategory
+    }
+    func getSeaCate() -> String{
+        return self.seasonCategory
+    }
+    mutating func setCloName(ClothName: String){
+        self.clothName = ClothName
+    }
+    mutating func setCloImg(ClothImg: UIImage){
+        self.clothImage = ClothImg
+    }
+    mutating func setCloCate(CloCate: String){
+        self.clothCategory = CloCate
+    }
+    mutating func setSeaCate(SeaCate: String){
+        self.seasonCategory = SeaCate
+    }
+    
 }
 
 struct record{
-    var cloth_top : String
-    var cloth_bottom : String
-    var cloth_outer : String
-    var cloth_shoes : String
-    var date : String
-    var rating : Int
-    var comment : String
+    private var cloth_top : String
+    private var cloth_bottom : String
+    private var cloth_outer : String
+    private var cloth_shoes : String
+    private var date : String
+    private var rating : Int
+    private var comment : String
     
     init(top : String, bottom : String, outer : String, shoes : String, date : String, rating : Int, comment : String){
         self.cloth_top = top
@@ -42,4 +67,51 @@ struct record{
         self.rating = rating
         self.comment = comment
     }
+    
+    func getCloTop() -> String{
+        return self.cloth_top
+    }
+    func getCloBtm() -> String{
+        return self.cloth_bottom
+    }
+    func getCloOut() -> String{
+        return self.cloth_outer
+    }
+    func getClosho() -> String{
+        return self.cloth_shoes
+    }
+    func getCloDate() -> String{
+        return self.date
+    }
+    func getCloRate() -> Int{
+        return self.rating
+    }
+    func getCloCom() -> String{
+        return self.comment
+    }
+    
+    
+    mutating func setCloTop(cloTop: String) {
+        self.cloth_top = cloTop
+    }
+    mutating func setCloBtm(cloBtm: String) {
+        self.cloth_bottom = cloBtm
+    }
+    mutating func setCloOut(cloOut: String) {
+        self.cloth_outer = cloOut
+    }
+    mutating func setClosho(cloSho: String) {
+        self.cloth_shoes = cloSho
+    }
+    mutating func setCloDate(cloDate: String) {
+        self.date = cloDate
+    }
+    mutating func setCloRate(cloRate: Int) {
+        self.rating = cloRate
+    }
+    mutating func setCloCom(cloCom: String) {
+        self.comment = cloCom
+    }
+    
+    
 }
