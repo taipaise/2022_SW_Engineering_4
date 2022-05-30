@@ -23,13 +23,15 @@ class ClothInfoEditViewController: UIViewController {
     @IBOutlet weak var changeSeaSeg: UISegmentedControl!
     
     var tmp_name: String = ""
-    var clothText: String = ""
-    var seasonText: String = ""
+    var clothText: String = "아우터"
+    var seasonText: String = "봄"
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        clothText = "아우터"
+        seasonText = "봄"
         editCloImage.image = appDelegate.clothInfo[appDelegate.idx].clothImage
         editCloName.text = appDelegate.clothInfo[appDelegate.idx].clothName
         editClocate.text = appDelegate.clothInfo[appDelegate.idx].clothCategory
