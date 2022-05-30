@@ -54,6 +54,11 @@ class DetailViewController: UIViewController {
     
     var date: String!
     
+    @IBAction func btnUpdateClicked(_ sender: Any) {
+        guard let recordAddVC = self.storyboard?.instantiateViewController(identifier: "RecordAddViewController") as? RecordAddViewController else { return }
+        recordAddVC.date = date
+        self.navigationController?.pushViewController(recordAddVC, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.myLabel.text = date

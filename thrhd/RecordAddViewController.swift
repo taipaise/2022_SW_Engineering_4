@@ -9,7 +9,15 @@ import UIKit
 import DropDown
 
 class RecordAddViewController: UIViewController {
+    var date : String!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var topName : String!
+    var bottomName : String!
+    var outerName : String!
+    var shoesName : String!
+    var rating : Int = 0
+    var comment : String!
+    
     @IBOutlet weak var starSeg: UISegmentedControl!
 
     @IBOutlet weak var top: UIImageView!
@@ -46,6 +54,9 @@ class RecordAddViewController: UIViewController {
     @IBOutlet weak var ivIcon4: UIImageView!
     @IBOutlet weak var btnSelect4: UIButton!
     
+    @IBOutlet weak var tfComment: UITextField!
+    
+    @IBOutlet weak var labelDate: UILabel!
     
     let dropdown1 = DropDown()
     let dropdown2 = DropDown()
@@ -70,6 +81,7 @@ class RecordAddViewController: UIViewController {
         setDropdown2()
         setDropdown3()
         setDropdown4()
+        labelDate.text = date
         
     }
     // DropDown UI 커스텀
@@ -114,6 +126,7 @@ class RecordAddViewController: UIViewController {
         dropdown1.selectionAction = { [weak self] (index, item) in
             //선택한 Item을 TextField에 넣어준다.
             self!.tfInput1.text = item
+            self!.topName = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.clothName == item}){
                 self!.top.image = self!.appDelegate.clothInfo[cloIndex].clothImage
             }
@@ -139,6 +152,7 @@ class RecordAddViewController: UIViewController {
         // Item 선택 시 처리
         dropdown2.selectionAction = { [weak self] (index: Int, item: String) in
             //선택한 Item을 TextField에 넣어준다.
+            self!.bottomName = item
             self!.tfInput2.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.clothName == item}){
                 self!.bottom.image = self!.appDelegate.clothInfo[cloIndex].clothImage
@@ -165,6 +179,7 @@ class RecordAddViewController: UIViewController {
         // Item 선택 시 처리
         dropdown3.selectionAction = { [weak self] (index, item) in
             //선택한 Item을 TextField에 넣어준다.
+            self!.outerName = item
             self!.tfInput3.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.clothName == item}){
                 self!.outer.image = self!.appDelegate.clothInfo[cloIndex].clothImage
@@ -192,6 +207,7 @@ class RecordAddViewController: UIViewController {
         // Item 선택 시 처리
         dropdown4.selectionAction = { [weak self] (index, item) in
             //선택한 Item을 TextField에 넣어준다.
+            self!.shoesName = item
             self!.tfInput4.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.clothName == item}){
                 self!.shoes.image = self!.appDelegate.clothInfo[cloIndex].clothImage
@@ -236,6 +252,7 @@ class RecordAddViewController: UIViewController {
             star3.image = #imageLiteral(resourceName: "empty_star")
             star4.image = #imageLiteral(resourceName: "empty_star")
             star5.image = #imageLiteral(resourceName: "empty_star")
+            rating = 1
         case 1:
             starRating = "2"
             star1.image = #imageLiteral(resourceName: "full_star")
@@ -243,6 +260,7 @@ class RecordAddViewController: UIViewController {
             star3.image = #imageLiteral(resourceName: "empty_star")
             star4.image = #imageLiteral(resourceName: "empty_star")
             star5.image = #imageLiteral(resourceName: "empty_star")
+            rating = 2
         case 2:
             starRating = "3"
             star1.image = #imageLiteral(resourceName: "full_star")
@@ -250,6 +268,7 @@ class RecordAddViewController: UIViewController {
             star3.image = #imageLiteral(resourceName: "full_star")
             star4.image = #imageLiteral(resourceName: "empty_star")
             star5.image = #imageLiteral(resourceName: "empty_star")
+            rating = 3
         case 3:
             starRating = "4"
             star1.image = #imageLiteral(resourceName: "full_star")
@@ -257,25 +276,39 @@ class RecordAddViewController: UIViewController {
             star3.image = #imageLiteral(resourceName: "full_star")
             star4.image = #imageLiteral(resourceName: "full_star")
             star5.image = #imageLiteral(resourceName: "empty_star")
-        case 5:
-            starRating = "5"
+            rating = 4
+        case 4:
+            starRating = "4"
             star1.image = #imageLiteral(resourceName: "full_star")
             star2.image = #imageLiteral(resourceName: "full_star")
             star3.image = #imageLiteral(resourceName: "full_star")
             star4.image = #imageLiteral(resourceName: "full_star")
             star5.image = #imageLiteral(resourceName: "full_star")
+            rating = 5
         default:
             break
         }
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnUpdateComClicked(_ sender: Any) {
+        comment = tfComment.text!
+    
+        appDelegate.recordInfo.append(record(top: topName, bottom: bottomName, outer: outerName, shoes: shoesName, date: date, rating: rating, comment: comment))
+        
+        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_top)
+        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_bottom)
+        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_outer)
+        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_shoes)
+        print(appDelegate.recordInfo[appDelegate.recCnt].cloth_shoes)
+        print(appDelegate.recordInfo[appDelegate.recCnt].rating)
+        print(appDelegate.recordInfo[appDelegate.recCnt].comment)
+        appDelegate.recCnt += 1
+        print("record struct array length: ", appDelegate.recordInfo.count)
+        
+        self.view.makeToast("추가되었습니다.", duration: 2.0, position: .bottom)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.navigationController?.popViewController(animated: true)
+        }
+        
     }
-    */
-
 }
