@@ -9,6 +9,7 @@ import UIKit
 import DropDown
 
 class RecordAddViewController: UIViewController {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){self.view.endEditing(true) }
     var date : String!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var topName : String!

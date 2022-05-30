@@ -10,7 +10,8 @@ import MobileCoreServices//포토앨범, 카메라 기능 추가
 import Toast_Swift
 
 class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){self.view.endEditing(true) }
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet weak var clothImageView: UIImageView!
     @IBOutlet weak var clothCategory: UISegmentedControl!
