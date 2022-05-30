@@ -31,7 +31,6 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     
@@ -85,28 +84,28 @@ class DetailViewController: UIViewController {
         bottom_label.text = "없음"
         outer_label.text = "없음"
         shoes_label.text = "없음"
-        if let dateInx = self.appDelegate.recordInfo.firstIndex(where: {$0.date == date}){
+        if let dateInx = self.appDelegate.recordInfo.firstIndex(where: {$0.getCloDate() == date}){
             //상의 기록 설정
-            if let topIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.clothName == appDelegate.recordInfo[dateInx].cloth_top}){
-                self.top.image = self.appDelegate.clothInfo[topIndex].clothImage
-                self.top_label.text = self.appDelegate.clothInfo[topIndex].clothName
+            if let topIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[dateInx].getCloTop()}){
+                self.top.image = self.appDelegate.clothInfo[topIndex].getCloImg()
+                self.top_label.text = self.appDelegate.clothInfo[topIndex].getCloName()
             }
             //하의 기록 설정
-            if let bottomIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.clothName == appDelegate.recordInfo[dateInx].cloth_bottom}){
-                self.bottom.image = self.appDelegate.clothInfo[bottomIndex].clothImage
-                self.bottom_label.text = self.appDelegate.clothInfo[bottomIndex].clothName
+            if let bottomIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[dateInx].getCloBtm()}){
+                self.bottom.image = self.appDelegate.clothInfo[bottomIndex].getCloImg()
+                self.bottom_label.text = self.appDelegate.clothInfo[bottomIndex].getCloName()
             }
             //아우터 기록 설정
-            if let outerIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.clothName == appDelegate.recordInfo[dateInx].cloth_outer}){
-                self.outer.image = self.appDelegate.clothInfo[outerIndex].clothImage
-                self.outer_label.text = self.appDelegate.clothInfo[outerIndex].clothName
+            if let outerIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[dateInx].getCloOut()}){
+                self.outer.image = self.appDelegate.clothInfo[outerIndex].getCloImg()
+                self.outer_label.text = self.appDelegate.clothInfo[outerIndex].getCloName()
             }
             //신발 기록 설정
-            if let shoesIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.clothName == appDelegate.recordInfo[dateInx].cloth_shoes}){
-                self.shoes.image = self.appDelegate.clothInfo[shoesIndex].clothImage
-                self.shoes_label.text = self.appDelegate.clothInfo[shoesIndex].clothName
+            if let shoesIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[dateInx].getClosho()}){
+                self.shoes.image = self.appDelegate.clothInfo[shoesIndex].getCloImg()
+                self.shoes_label.text = self.appDelegate.clothInfo[shoesIndex].getCloName()
             }
-            switch appDelegate.recordInfo[dateInx].rating{
+            switch appDelegate.recordInfo[dateInx].getCloRate(){
             case 1:
                 star1.image = #imageLiteral(resourceName: "full_star")
                 star2.image = #imageLiteral(resourceName: "empty_star")
@@ -144,7 +143,7 @@ class DetailViewController: UIViewController {
                 star4.image = #imageLiteral(resourceName: "empty_star")
                 star5.image = #imageLiteral(resourceName: "empty_star")
             }
-            labelComment.text = appDelegate.recordInfo[dateInx].comment
+            labelComment.text = appDelegate.recordInfo[dateInx].getCloCom()
         }
     }
 }
