@@ -29,11 +29,11 @@ struct record{
     var cloth_bottom : String
     var cloth_outer : String
     var cloth_shoes : String
-    var date : Date
+    var date : String
     var rating : Int
     var comment : String
     
-    init(top : String, bottom : String, outer : String, shoes : String, date : Date, rating : Int, comment : String){
+    init(top : String, bottom : String, outer : String, shoes : String, date : String, rating : Int, comment : String){
         self.cloth_top = top
         self.cloth_bottom = bottom
         self.cloth_outer = outer

@@ -17,9 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var cnt: Int = 0
     var idx: Int = 0 //옷 정보 수정 page의 index
+    var recCnt : Int = 0
+    var recIdx : Int = 0
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        sleep(1)
         return true
     }
 
