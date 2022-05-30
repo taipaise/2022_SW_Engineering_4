@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001C3013284504F100CFB6ED /* jwt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C3012284504F100CFB6ED /* jwt.swift */; };
+		001C30152845106600CFB6ED /* RecordUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C30142845106600CFB6ED /* RecordUpdateViewController.swift */; };
 		0038FEDC283F587400F67FE9 /* RecordAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */; };
 		005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C01D92837238200C8EC5F /* CalendarViewController.swift */; };
 		00951684282E527C009F6FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951683282E527C009F6FBA /* AppDelegate.swift */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001C3012284504F100CFB6ED /* jwt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jwt.swift; sourceTree = "<group>"; };
+		001C30142845106600CFB6ED /* RecordUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordUpdateViewController.swift; sourceTree = "<group>"; };
 		0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAddViewController.swift; sourceTree = "<group>"; };
 		005C01D92837238200C8EC5F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		00951680282E527C009F6FBA /* thrhd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thrhd.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +110,8 @@
 				0095168C282E527E009F6FBA /* Assets.xcassets */,
 				0095168E282E527E009F6FBA /* LaunchScreen.storyboard */,
 				00951691282E527E009F6FBA /* Info.plist */,
+				001C3012284504F100CFB6ED /* jwt.swift */,
+				001C30142845106600CFB6ED /* RecordUpdateViewController.swift */,
 			);
 			path = thrhd;
 			sourceTree = "<group>";
@@ -251,7 +257,9 @@
 				5DB59247282E7C9A00A41A76 /* LoginViewController.swift in Sources */,
 				00951688282E527C009F6FBA /* ViewController.swift in Sources */,
 				00951684282E527C009F6FBA /* AppDelegate.swift in Sources */,
+				001C3013284504F100CFB6ED /* jwt.swift in Sources */,
 				5D6D39B92843B30200A2A8E2 /* SignUpViewController.swift in Sources */,
+				001C30152845106600CFB6ED /* RecordUpdateViewController.swift in Sources */,
 				00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */,
 				00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */,
 				00AFA07528372DDC008516C9 /* DetailViewController.swift in Sources */,

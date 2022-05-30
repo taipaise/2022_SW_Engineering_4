@@ -61,9 +61,17 @@ class DetailViewController: UIViewController {
     var date: String!
     
     @IBAction func btnUpdateClicked(_ sender: Any) {
-        guard let recordAddVC = self.storyboard?.instantiateViewController(identifier: "RecordAddViewController") as? RecordAddViewController else { return }
-        recordAddVC.date = date
-        self.navigationController?.pushViewController(recordAddVC, animated: true)
+
+        if let isExist = self.appDelegate.recordInfo.firstIndex(where: {$0.getCloDate() == date}){
+            guard let recordUpdateVC = self.storyboard?.instantiateViewController(identifier: "RecordUpdateViewController") as? RecordUpdateViewController else { return }
+            recordUpdateVC.index = isExist
+            recordUpdateVC.date = date
+            self.navigationController?.pushViewController(recordUpdateVC, animated: true)
+        }else{
+            guard let recordAddVC = self.storyboard?.instantiateViewController(identifier: "RecordAddViewController") as? RecordAddViewController else { return }
+            recordAddVC.date = date
+            self.navigationController?.pushViewController(recordAddVC, animated: true)
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         self.viewDidLoad()
