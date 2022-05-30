@@ -30,6 +30,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login"/>
                                 <connections>
+                                    <action selector="onBtnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKc-3Q-p2D"/>
                                     <segue destination="36C-Tl-Ynr" kind="show" id="gQ6-pn-a8L"/>
                                 </connections>
                             </button>
@@ -85,6 +86,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="xat-fV-py9"/>
+                    <connections>
+                        <outlet property="idTextField" destination="bvK-b5-z6q" id="Th7-xz-dI4"/>
+                        <outlet property="pwTextField" destination="gtE-ta-njd" id="EGC-O5-ZEW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

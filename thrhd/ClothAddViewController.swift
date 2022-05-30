@@ -90,7 +90,7 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
         appDelegate.clothName.append(clonameText)
         
         print(clonameText, clothText, seasonText)
-        print(appDelegate.clothInfo[appDelegate.cnt].clothName)
+        print(appDelegate.clothInfo[appDelegate.cnt].getCloName())
         appDelegate.cnt += 1
         print("struct array length: ", appDelegate.clothInfo.count)
         

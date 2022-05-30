@@ -17,54 +17,54 @@ class RecordAddViewController: UIViewController {
     var shoesName : String!
     var rating : Int = 0
     var comment : String!
-    
+
     @IBOutlet weak var starSeg: UISegmentedControl!
 
     @IBOutlet weak var top: UIImageView!
     @IBOutlet weak var bottom: UIImageView!
     @IBOutlet weak var outer: UIImageView!
     @IBOutlet weak var shoes: UIImageView!
-    
+
     @IBOutlet weak var star1: UIImageView!
     @IBOutlet weak var star2: UIImageView!
     @IBOutlet weak var star3: UIImageView!
     @IBOutlet weak var star4: UIImageView!
     @IBOutlet weak var star5: UIImageView!
-    
-    
+
+
     @IBOutlet weak var dropView1: UIView!
     @IBOutlet weak var tfInput1: UITextField!
     @IBOutlet weak var ivIcon1: UIImageView!
     @IBOutlet weak var btnSelect1: UIButton!
-    
-    
+
+
     @IBOutlet weak var dropView2: UIView!
     @IBOutlet weak var tfInput2: UITextField!
     @IBOutlet weak var ivIcon2: UIImageView!
     @IBOutlet weak var btnSelect2: UIButton!
-    
+
     @IBOutlet weak var dropView3: UIView!
     @IBOutlet weak var tfInput3: UITextField!
     @IBOutlet weak var ivIcon3: UIImageView!
     @IBOutlet weak var btnSelect3: UIButton!
-    
+
 
     @IBOutlet weak var dropView4: UIView!
     @IBOutlet weak var tfInput4: UITextField!
     @IBOutlet weak var ivIcon4: UIImageView!
     @IBOutlet weak var btnSelect4: UIButton!
-    
+
     @IBOutlet weak var tfComment: UITextField!
-    
+
     @IBOutlet weak var labelDate: UILabel!
-    
+
     let dropdown1 = DropDown()
     let dropdown2 = DropDown()
     let dropdown3 = DropDown()
     let dropdown4 = DropDown()
-    
+
     var starRating = ""
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         top.image = #imageLiteral(resourceName: "top")
@@ -82,7 +82,7 @@ class RecordAddViewController: UIViewController {
         setDropdown3()
         setDropdown4()
         labelDate.text = date
-        
+
     }
     // DropDown UI 커스텀
     func initUI() {
@@ -95,7 +95,7 @@ class RecordAddViewController: UIViewController {
         dropdown2.dismissMode = .automatic // 팝업을 닫을 모드 설정
         dropdown3.dismissMode = .automatic // 팝업을 닫을 모드 설정
         dropdown4.dismissMode = .automatic // 팝업을 닫을 모드 설정
-            
+ 
         tfInput1.text = "상의(no_item)"
         tfInput2.text = "하의(no_item)"
         tfInput3.text = "아우터(no_item)"
@@ -110,8 +110,8 @@ class RecordAddViewController: UIViewController {
         self.ivIcon3.image = UIImage.init(named: "downarrow.png")
         self.ivIcon4.image = UIImage.init(named: "downarrow.png")
     }
-    
-    
+
+
     func setDropdown1() {
         // dataSource로 ItemList를 연결
         dropdown1.dataSource = appDelegate.clothName
@@ -226,23 +226,23 @@ class RecordAddViewController: UIViewController {
         dropdown1.show()
         self.ivIcon1.image = UIImage.init(named: "uparrow.png")
     }
-    
+
     @IBAction func drop2Clicked(_ sender: Any) {
         dropdown2.show()
         self.ivIcon2.image = UIImage.init(named: "uparrow.png")
     }
-    
+
     @IBAction func drop3Clicked(_ sender: Any) {
         dropdown3.show()
         self.ivIcon3.image = UIImage.init(named: "uparrow.png")
     }
-    
+
     @IBAction func drop4Clicked(_ sender: Any) {
         dropdown4.show()
         self.ivIcon4.image = UIImage.init(named: "uparrow.png")
     }
-    
-    
+
+
     @IBAction func starSegAction(_ sender: Any) {
         switch starSeg.selectedSegmentIndex {
         case 0 :
@@ -292,9 +292,9 @@ class RecordAddViewController: UIViewController {
 
     @IBAction func btnUpdateComClicked(_ sender: Any) {
         comment = tfComment.text!
-    
+
         appDelegate.recordInfo.append(record(top: topName, bottom: bottomName, outer: outerName, shoes: shoesName, date: date, rating: rating, comment: comment))
-        
+
         print(appDelegate.recordInfo[appDelegate.recCnt].cloth_top)
         print(appDelegate.recordInfo[appDelegate.recCnt].cloth_bottom)
         print(appDelegate.recordInfo[appDelegate.recCnt].cloth_outer)
@@ -304,11 +304,11 @@ class RecordAddViewController: UIViewController {
         print(appDelegate.recordInfo[appDelegate.recCnt].comment)
         appDelegate.recCnt += 1
         print("record struct array length: ", appDelegate.recordInfo.count)
-        
+
         self.view.makeToast("추가되었습니다.", duration: 2.0, position: .bottom)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             self.navigationController?.popViewController(animated: true)
         }
-        
+
     }
 }
