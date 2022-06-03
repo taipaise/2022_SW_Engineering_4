@@ -73,25 +73,25 @@ class RecordUpdateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let cloIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[index].getCloTop()}){
-            self.top.image = self.appDelegate.clothInfo[cloIndex].getCloImg()
+            self.top.image = self.appDelegate.clothInfo[cloIndex].getImg()
             self.tfInput1.text = self.appDelegate.clothInfo[cloIndex].getCloName()
             topName = tfInput1.text
         }
         
         if let cloIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[index].getCloBtm()}){
-            self.bottom.image = self.appDelegate.clothInfo[cloIndex].getCloImg()
+            self.bottom.image = self.appDelegate.clothInfo[cloIndex].getImg()
             self.tfInput2.text = self.appDelegate.clothInfo[cloIndex].getCloName()
             bottomName = tfInput2.text
         }
         
         if let cloIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[index].getCloOut()}){
-            self.outer.image = self.appDelegate.clothInfo[cloIndex].getCloImg()
+            self.outer.image = self.appDelegate.clothInfo[cloIndex].getImg()
             self.tfInput3.text = self.appDelegate.clothInfo[cloIndex].getCloName()
             outerName = tfInput3.text
         }
         
         if let cloIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[index].getClosho()}){
-            self.shoes.image = self.appDelegate.clothInfo[cloIndex].getCloImg()
+            self.shoes.image = self.appDelegate.clothInfo[cloIndex].getImg()
             self.tfInput4.text = self.appDelegate.clothInfo[cloIndex].getCloName()
             shoesName = tfInput4.text
         }
@@ -184,7 +184,7 @@ class RecordUpdateViewController: UIViewController {
             self!.tfInput1.text = item
             self!.topName = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
-                self!.top.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
+                self!.top.image = self!.appDelegate.clothInfo[cloIndex].getImg()
             }
             self!.ivIcon1.image = UIImage.init(named: "downarrow.png")
         }
@@ -211,7 +211,7 @@ class RecordUpdateViewController: UIViewController {
             self!.bottomName = item
             self!.tfInput2.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
-                self!.bottom.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
+                self!.bottom.image = self!.appDelegate.clothInfo[cloIndex].getImg()
             }
             self!.ivIcon2.image = UIImage.init(named: "downarrow.png")
         }
@@ -238,7 +238,7 @@ class RecordUpdateViewController: UIViewController {
             self!.outerName = item
             self!.tfInput3.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
-                self!.outer.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
+                self!.outer.image = self!.appDelegate.clothInfo[cloIndex].getImg()
             }
             self!.ivIcon3.image = UIImage.init(named: "downarrow.png")
         }
@@ -266,7 +266,7 @@ class RecordUpdateViewController: UIViewController {
             self!.shoesName = item
             self!.tfInput4.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
-                self!.shoes.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
+                self!.shoes.image = self!.appDelegate.clothInfo[cloIndex].getImg()
             }
             self!.ivIcon4.image = UIImage.init(named: "downarrow.png")
         }

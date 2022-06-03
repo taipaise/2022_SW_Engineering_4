@@ -42,7 +42,7 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as! MyCollectionViewCell
-        cell.clothImageView.image = appDelegate.clothInfo[indexPath.row].getCloImg()
+        cell.clothImageView.image = appDelegate.clothInfo[indexPath.row].getImg()
         cell.labelClothName.text = appDelegate.clothInfo[indexPath.row].getCloName()
         print("idx.row: ", indexPath.row, "img: ", cell.clothImageView.image!)
         

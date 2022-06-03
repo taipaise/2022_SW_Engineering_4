@@ -95,22 +95,22 @@ class DetailViewController: UIViewController {
         if let dateInx = self.appDelegate.recordInfo.firstIndex(where: {$0.getCloDate() == date}){
             //상의 기록 설정
             if let topIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[dateInx].getCloTop()}){
-                self.top.image = self.appDelegate.clothInfo[topIndex].getCloImg()
+                self.top.image = self.appDelegate.clothInfo[topIndex].getImg()
                 self.top_label.text = self.appDelegate.clothInfo[topIndex].getCloName()
             }
             //하의 기록 설정
             if let bottomIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[dateInx].getCloBtm()}){
-                self.bottom.image = self.appDelegate.clothInfo[bottomIndex].getCloImg()
+                self.bottom.image = self.appDelegate.clothInfo[bottomIndex].getImg()
                 self.bottom_label.text = self.appDelegate.clothInfo[bottomIndex].getCloName()
             }
             //아우터 기록 설정
             if let outerIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[dateInx].getCloOut()}){
-                self.outer.image = self.appDelegate.clothInfo[outerIndex].getCloImg()
+                self.outer.image = self.appDelegate.clothInfo[outerIndex].getImg()
                 self.outer_label.text = self.appDelegate.clothInfo[outerIndex].getCloName()
             }
             //신발 기록 설정
             if let shoesIndex = self.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == appDelegate.recordInfo[dateInx].getClosho()}){
-                self.shoes.image = self.appDelegate.clothInfo[shoesIndex].getCloImg()
+                self.shoes.image = self.appDelegate.clothInfo[shoesIndex].getImg()
                 self.shoes_label.text = self.appDelegate.clothInfo[shoesIndex].getCloName()
             }
             switch appDelegate.recordInfo[dateInx].getCloRate(){
