@@ -11,6 +11,7 @@
 		001C30152845106600CFB6ED /* RecordUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C30142845106600CFB6ED /* RecordUpdateViewController.swift */; };
 		0038FEDC283F587400F67FE9 /* RecordAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */; };
 		005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C01D92837238200C8EC5F /* CalendarViewController.swift */; };
+		006A9A65284A6A470087ED35 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A9A64284A6A470087ED35 /* WeatherViewController.swift */; };
 		00951684282E527C009F6FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951683282E527C009F6FBA /* AppDelegate.swift */; };
 		00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951685282E527C009F6FBA /* SceneDelegate.swift */; };
 		00951688282E527C009F6FBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951687282E527C009F6FBA /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		001C30142845106600CFB6ED /* RecordUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordUpdateViewController.swift; sourceTree = "<group>"; };
 		0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAddViewController.swift; sourceTree = "<group>"; };
 		005C01D92837238200C8EC5F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		006A9A64284A6A470087ED35 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		00951680282E527C009F6FBA /* thrhd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thrhd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00951683282E527C009F6FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00951685282E527C009F6FBA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				00951691282E527E009F6FBA /* Info.plist */,
 				001C3012284504F100CFB6ED /* jwt.swift */,
 				001C30142845106600CFB6ED /* RecordUpdateViewController.swift */,
+				006A9A64284A6A470087ED35 /* WeatherViewController.swift */,
 			);
 			path = thrhd;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D6D39B72843B2E300A2A8E2 /* FindPwViewController.swift in Sources */,
+				006A9A65284A6A470087ED35 /* WeatherViewController.swift in Sources */,
 				0038FEDC283F587400F67FE9 /* RecordAddViewController.swift in Sources */,
 				005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */,
 				5D6D39A7283E809300A2A8E2 /* SharedStruct.swift in Sources */,
