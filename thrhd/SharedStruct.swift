@@ -8,16 +8,16 @@
 import Foundation
 import UIKit
 
-struct imageInfo{
+struct imageInfo :Codable{
     
     private var clothName: String
-    private var clothImage: UIImage
+    private var clothImage: String
     private var clothCategory: String
     private var seasonCategory: String
     
     init(clothName: String, clothImage: UIImage, clothCategory: String, seasonCategory: String){
         self.clothName = clothName
-        self.clothImage = clothImage
+        self.clothImage = clothImage.base64!
         self.clothCategory = clothCategory
         self.seasonCategory = seasonCategory
     }
@@ -25,7 +25,7 @@ struct imageInfo{
     func getCloName() -> String{
         return self.clothName
     }
-    func getCloImg() -> UIImage{
+    func getCloImg() -> String{
         return self.clothImage
     }
     func getCloCate() -> String{
@@ -38,7 +38,7 @@ struct imageInfo{
         self.clothName = ClothName
     }
     mutating func setCloImg(ClothImg: UIImage){
-        self.clothImage = ClothImg
+        self.clothImage = ClothImg.base64!
     }
     mutating func setCloCate(CloCate: String){
         self.clothCategory = CloCate
@@ -46,10 +46,12 @@ struct imageInfo{
     mutating func setSeaCate(SeaCate: String){
         self.seasonCategory = SeaCate
     }
-    
+    func getImg() -> UIImage{
+        return clothImage.imageFromBase64!
+    }
 }
 
-struct record{
+struct record :Codable{
     private var cloth_top : String
     private var cloth_bottom : String
     private var cloth_outer : String

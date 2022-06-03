@@ -129,7 +129,7 @@ class RecordAddViewController: UIViewController {
             self!.tfInput1.text = item
             self!.topName = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
-                self!.top.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
+                self!.top.image = self!.appDelegate.clothInfo[cloIndex].getImg()
             }
             self!.ivIcon1.image = UIImage.init(named: "downarrow.png")
         }
@@ -156,7 +156,7 @@ class RecordAddViewController: UIViewController {
             self!.bottomName = item
             self!.tfInput2.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
-                self!.bottom.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
+                self!.bottom.image = self!.appDelegate.clothInfo[cloIndex].getImg()
             }
             self!.ivIcon2.image = UIImage.init(named: "downarrow.png")
         }
@@ -183,7 +183,7 @@ class RecordAddViewController: UIViewController {
             self!.outerName = item
             self!.tfInput3.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
-                self!.outer.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
+                self!.outer.image = self!.appDelegate.clothInfo[cloIndex].getImg()
             }
             self!.ivIcon3.image = UIImage.init(named: "downarrow.png")
         }
@@ -211,7 +211,7 @@ class RecordAddViewController: UIViewController {
             self!.shoesName = item
             self!.tfInput4.text = item
             if let cloIndex = self!.appDelegate.clothInfo.firstIndex(where: {$0.getCloName() == item}){
-                self!.shoes.image = self!.appDelegate.clothInfo[cloIndex].getCloImg()
+                self!.shoes.image = self!.appDelegate.clothInfo[cloIndex].getImg()
             }
             self!.ivIcon4.image = UIImage.init(named: "downarrow.png")
         }

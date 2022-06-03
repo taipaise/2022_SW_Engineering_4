@@ -32,7 +32,7 @@ class ClothInfoEditViewController: UIViewController {
         
         clothText = "아우터"
         seasonText = "봄"
-        editCloImage.image = appDelegate.clothInfo[appDelegate.idx].getCloImg()
+        editCloImage.image = appDelegate.clothInfo[appDelegate.idx].getImg()
         editCloName.text = appDelegate.clothInfo[appDelegate.idx].getCloName()
         editClocate.text = appDelegate.clothInfo[appDelegate.idx].getCloCate()
         editClosea.text = appDelegate.clothInfo[appDelegate.idx].getSeaCate()
