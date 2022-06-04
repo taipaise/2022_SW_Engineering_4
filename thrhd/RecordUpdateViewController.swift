@@ -358,7 +358,7 @@ class RecordUpdateViewController: UIViewController {
         appDelegate.recordInfo[index].setCloCom(cloCom: comment)
         
         print("record struct array length: ", appDelegate.recordInfo.count)
-
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.recordInfo), forKey:"record")
             self.view.makeToast("추가되었습니다.", duration: 2.0, position: .bottom)
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 self.navigationController?.popViewController(animated: true)
