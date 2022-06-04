@@ -16,9 +16,8 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var collectionView: UICollectionView!
 
     
-    
     var captureImage:UIImage!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +29,7 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.dataSource = self
         initRefresh()
         print("collection view load")
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
