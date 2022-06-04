@@ -20,7 +20,7 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         collectionView.dataSource = self
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return appDelegate.clothInfo.count
+        return appDelegate.tmp_clothInfo.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
