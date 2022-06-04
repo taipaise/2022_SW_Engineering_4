@@ -27,7 +27,7 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         // 달력의 맨 위의 년도, 월의 색깔
         calendar.appearance.headerTitleColor = .systemPink
         // 달력의 요일 글자 색깔
-        calendar.appearance.weekdayTextColor = .orange
+        calendar.appearance.weekdayTextColor = .black
         
     }
     
