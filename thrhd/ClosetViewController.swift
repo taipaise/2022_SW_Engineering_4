@@ -15,6 +15,8 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet weak var collectionView: UICollectionView!
 
+    
+    
     var captureImage:UIImage!
     
     
