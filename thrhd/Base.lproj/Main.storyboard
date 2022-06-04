@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A0r-gG-mEl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A0r-gG-mEl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -423,53 +423,53 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-Qq-p6A" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-Qq-p6A" userLabel="상의" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
                                         <rect key="frame" x="65" y="18" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" title="상의"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aru-xl-qyA" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aru-xl-qyA" userLabel="하의" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
                                         <rect key="frame" x="156" y="18" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" title="하의"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-rm-tFb" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-rm-tFb" userLabel="아우터" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
                                         <rect key="frame" x="265" y="17" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" title="아우터"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-Dr-f7I" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-Dr-f7I" userLabel="신발" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
                                         <rect key="frame" x="351" y="17" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" title="신발"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QS-qwa" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QS-qwa" userLabel="봄" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
                                         <rect key="frame" x="65" y="55" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" title="봄"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZN-aV-3tY" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZN-aV-3tY" userLabel="여름" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
                                         <rect key="frame" x="156" y="55" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" title="여름"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-0j-7gy" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-0j-7gy" userLabel="가을" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
                                         <rect key="frame" x="264" y="53" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" title="가을"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeX-Uf-J0L" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeX-Uf-J0L" userLabel="겨울" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
                                         <rect key="frame" x="345" y="59" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <buttonConfiguration key="configuration" style="plain" title="겨울"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -486,6 +486,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="적용하기"/>
+                                <connections>
+                                    <action selector="onBtnApply:" destination="keP-bD-1yu" eventType="touchUpInside" id="kKp-Tz-dOG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uSm-Sy-LIE"/>
@@ -505,6 +508,7 @@
                     <navigationItem key="navigationItem" title="Closet" id="bxf-vO-EbH"/>
                     <connections>
                         <outlet property="collectionView" destination="cSL-V0-K1C" id="OkX-1m-R5s"/>
+                        <outlet property="viewGroup" destination="E6M-9v-JaK" id="2Gn-XE-LYH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QJC-ik-Usn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -772,6 +776,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCv-nS-fry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5186.9565217391309" y="-985.04464285714278"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="9eO-i1-cD8">
+            <objects>
+                <viewController storyboardIdentifier="test" id="zRG-3B-hRx" customClass="testViewController" customModule="thrhd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bni-ik-P4B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KW9-ig-VgR">
+                                <rect key="frame" x="87" y="203" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7rL-Y0-FYj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="KW9-ig-VgR" id="xhs-Ru-ly6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIR-G4-T4T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3631" y="-1895"/>
+        </scene>
+        <!--Category View Controller-->
+        <scene sceneID="jkc-yI-my5">
+            <objects>
+                <viewController storyboardIdentifier="category" id="M4o-BP-icv" customClass="CategoryViewController" customModule="thrhd" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wk1-ce-jYm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RU8-3r-Tpg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m4m-TC-tF3">
+                                    <size key="itemSize" width="180" height="180"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCollectionViewCell2" id="FUh-zn-eOc" customClass="MyCollectionViewCell2" customModule="thrhd" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1KL-hR-cru">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UK5-uz-1wX">
+                                                    <rect key="frame" x="25" y="8" width="130" height="130"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8N-2K-Fsq">
+                                                    <rect key="frame" x="25" y="146" width="130" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="180" height="180"/>
+                                        <connections>
+                                            <outlet property="imagevView" destination="UK5-uz-1wX" id="Zql-Zo-sMn"/>
+                                            <outlet property="labelName" destination="s8N-2K-Fsq" id="UwN-cv-wfI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ef6-Gv-fTX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RU8-3r-Tpg" firstAttribute="top" secondItem="Ef6-Gv-fTX" secondAttribute="top" id="0Vq-6I-Tyd"/>
+                            <constraint firstItem="RU8-3r-Tpg" firstAttribute="leading" secondItem="Ef6-Gv-fTX" secondAttribute="leading" id="4Pi-FD-EhK"/>
+                            <constraint firstItem="RU8-3r-Tpg" firstAttribute="bottom" secondItem="Ef6-Gv-fTX" secondAttribute="bottom" id="Buh-vU-KDg"/>
+                            <constraint firstItem="Ef6-Gv-fTX" firstAttribute="trailing" secondItem="RU8-3r-Tpg" secondAttribute="trailing" id="gLQ-0G-ffI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="RU8-3r-Tpg" id="ObZ-Le-o6J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XPn-dh-weI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3721.739130434783" y="-1241.5178571428571"/>
         </scene>
         <!--Cloth Add View Controller-->
         <scene sceneID="4bj-pG-reo">
@@ -2545,6 +2637,32 @@
             <point key="canvasLocation" x="5858" y="394"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="2ZN-aV-3tY">
+            <size key="intrinsicContentSize" width="48.5" height="31"/>
+        </designable>
+        <designable name="6nk-0j-7gy">
+            <size key="intrinsicContentSize" width="48.5" height="31"/>
+        </designable>
+        <designable name="MaN-Dr-f7I">
+            <size key="intrinsicContentSize" width="48.5" height="31"/>
+        </designable>
+        <designable name="SeX-Uf-J0L">
+            <size key="intrinsicContentSize" width="48.5" height="31"/>
+        </designable>
+        <designable name="ULN-rm-tFb">
+            <size key="intrinsicContentSize" width="60.5" height="31"/>
+        </designable>
+        <designable name="aru-xl-qyA">
+            <size key="intrinsicContentSize" width="48.5" height="31"/>
+        </designable>
+        <designable name="deX-QS-qwa">
+            <size key="intrinsicContentSize" width="36.5" height="31"/>
+        </designable>
+        <designable name="jEK-Qq-p6A">
+            <size key="intrinsicContentSize" width="48.5" height="31"/>
+        </designable>
+    </designables>
     <resources>
         <image name="archivebox.fill" catalog="system" width="128" height="106"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
