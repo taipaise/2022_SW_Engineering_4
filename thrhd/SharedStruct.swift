@@ -114,6 +114,5 @@ struct record :Codable{
     mutating func setCloCom(cloCom: String) {
         self.comment = cloCom
     }
-    
-    
 }
+
