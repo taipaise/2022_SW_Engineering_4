@@ -73,6 +73,30 @@ class DetailViewController: UIViewController {
             self.navigationController?.pushViewController(recordAddVC, animated: true)
         }
     }
+    
+    @IBAction func btnDeleteClicked(_ sender: Any) {
+        if let isExist = self.appDelegate.recordInfo.firstIndex(where: {$0.getCloDate() == date}){
+            let deleteAlert = UIAlertController(title: "알림", message: "정말 삭제하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+            let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
+                _ in self.appDelegate.recordInfo.remove(at: isExist)
+                self.appDelegate.recCnt -= 1
+                self.view.makeToast("삭제되었습니다.", duration: 1.0, position: .bottom)
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                    self.navigationController?.popViewController(animated: true)
+                }
+            }
+            let no = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
+            deleteAlert.addAction(yes)
+            deleteAlert.addAction(no)
+            present(deleteAlert, animated: true, completion: nil)
+        }else{
+            let errMsg = UIAlertController(title: "알림", message: "삭제할 기록이 없습니다.", preferredStyle: UIAlertController.Style.alert)
+            let ok = UIAlertAction(title: "닫기", style: UIAlertAction.Style.default, handler: nil)
+            errMsg.addAction(ok)
+            present(errMsg, animated: true, completion: nil)
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.viewDidLoad()
     }
