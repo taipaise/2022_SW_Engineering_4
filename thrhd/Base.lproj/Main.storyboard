@@ -367,167 +367,99 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6M-9v-JaK" customClass="CheckboxButtonContainerView" customModule="MBRadioCheckboxButton">
                                 <rect key="frame" x="12" y="88" width="390" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상의" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84e-r1-DV8">
-                                        <rect key="frame" x="25" y="15" width="30" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="봄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-Kl-CDH">
-                                        <rect key="frame" x="25" y="54" width="30" height="21"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-Qq-p6A" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="15" y="15" width="60" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="hLA-wa-lGp"/>
+                                            <constraint firstAttribute="width" constant="60" id="6et-eg-1lY"/>
+                                            <constraint firstAttribute="height" constant="30" id="Sn4-lQ-fYN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="하의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb3-Fe-Mb6">
-                                        <rect key="frame" x="115" y="15" width="30" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아우터" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNY-rg-vK9">
-                                        <rect key="frame" x="205" y="15" width="45" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신발" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFo-Zp-dfh">
-                                        <rect key="frame" x="310" y="15" width="30" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-Pv-DFF">
-                                        <rect key="frame" x="115" y="54" width="30" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가을" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwL-VV-cbY">
-                                        <rect key="frame" x="220" y="54" width="30" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="겨울" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgM-vY-c6q">
-                                        <rect key="frame" x="310" y="54" width="30" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-Qq-p6A" userLabel="1" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="60" y="15" width="20" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="AQR-Au-JEp"/>
-                                            <constraint firstAttribute="width" constant="20" id="fRy-bv-xwv"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="상의"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aru-xl-qyA" userLabel="하의" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="150" y="15" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aru-xl-qyA" userLabel="하의" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="115" y="15" width="60" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="OBw-Wt-deS"/>
-                                            <constraint firstAttribute="height" constant="20" id="P4Z-e8-nl2"/>
+                                            <constraint firstAttribute="width" constant="60" id="8lT-r8-u26"/>
+                                            <constraint firstAttribute="height" constant="30" id="EGW-I0-E0j"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="하의"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-rm-tFb" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="255" y="15" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-rm-tFb" userLabel="아우터" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="215" y="15" width="70" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="Dlh-LB-tpl"/>
-                                            <constraint firstAttribute="height" constant="20" id="HT0-Rw-lfC"/>
+                                            <constraint firstAttribute="width" constant="70" id="YE6-RM-gxU"/>
+                                            <constraint firstAttribute="height" constant="30" id="c4d-On-Uwk"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="아우터"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-Dr-f7I" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="345" y="15" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-Dr-f7I" userLabel="신발" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="315" y="15" width="60" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="AK6-5u-cuu"/>
-                                            <constraint firstAttribute="width" constant="20" id="Qn4-4S-Y1o"/>
+                                            <constraint firstAttribute="height" constant="30" id="AK6-5u-cuu"/>
+                                            <constraint firstAttribute="width" constant="60" id="Qn4-4S-Y1o"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="신발"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QS-qwa" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="60" y="55" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QS-qwa" userLabel="봄" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="15" y="50" width="60" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="9YU-1I-1Re"/>
-                                            <constraint firstAttribute="width" constant="20" id="zGZ-At-pBD"/>
+                                            <constraint firstAttribute="height" constant="30" id="peI-eo-z2l"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="tqm-zN-2MC"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="봄"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-0j-7gy" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="255" y="55" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-0j-7gy" userLabel="여름" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="215" y="45" width="70" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="20" id="jMw-tx-wrx"/>
-                                            <constraint firstAttribute="height" constant="20" id="pFM-Zs-tMR"/>
+                                            <constraint firstAttribute="height" constant="30" id="IBY-Gt-wPo"/>
+                                            <constraint firstAttribute="width" constant="70" id="lNu-IT-FEp"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="가을"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeX-Uf-J0L" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="345" y="55" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeX-Uf-J0L" userLabel="가을" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="315" y="45" width="60" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="ZLK-la-7jB"/>
-                                            <constraint firstAttribute="width" constant="20" id="fuL-b3-tSi"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="59S-eZ-WCW"/>
+                                            <constraint firstAttribute="width" constant="60" id="q83-fM-ymX"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="겨울"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZN-aV-3tY" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="150" y="55" width="20" height="20"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZN-aV-3tY" userLabel="겨울" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="115" y="50" width="60" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="0ou-XB-5DY"/>
-                                            <constraint firstAttribute="width" constant="20" id="JmB-UT-YPh"/>
+                                            <constraint firstAttribute="width" constant="60" id="UlE-Gu-ZVG"/>
+                                            <constraint firstAttribute="height" constant="30" id="eAe-Fd-cSs"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="여름"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="MaN-Dr-f7I" secondAttribute="trailing" constant="25" id="047-4n-eB9"/>
-                                    <constraint firstItem="jEK-Qq-p6A" firstAttribute="leading" secondItem="84e-r1-DV8" secondAttribute="trailing" constant="5" id="0vJ-Pr-bqI"/>
-                                    <constraint firstAttribute="bottom" secondItem="dgM-vY-c6q" secondAttribute="bottom" constant="15" id="1gb-3D-EiP"/>
-                                    <constraint firstItem="6nk-0j-7gy" firstAttribute="leading" secondItem="BwL-VV-cbY" secondAttribute="trailing" constant="5" id="26g-Kc-899"/>
-                                    <constraint firstAttribute="bottom" secondItem="cKt-Kl-CDH" secondAttribute="bottom" constant="15" id="3ze-tr-RT2"/>
-                                    <constraint firstItem="dgM-vY-c6q" firstAttribute="leading" secondItem="6nk-0j-7gy" secondAttribute="trailing" constant="35" id="6b3-SR-onY"/>
-                                    <constraint firstItem="Bb3-Fe-Mb6" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="7aa-Wj-wGd"/>
-                                    <constraint firstAttribute="trailing" secondItem="SeX-Uf-J0L" secondAttribute="trailing" constant="25" id="7al-NV-VVL"/>
-                                    <constraint firstAttribute="bottom" secondItem="2ZN-aV-3tY" secondAttribute="bottom" constant="15" id="8iZ-hL-V8G"/>
-                                    <constraint firstAttribute="bottom" secondItem="O3q-Pv-DFF" secondAttribute="bottom" constant="15" id="EGp-Hp-XJU"/>
-                                    <constraint firstItem="2ZN-aV-3tY" firstAttribute="leading" secondItem="O3q-Pv-DFF" secondAttribute="trailing" constant="5" id="EYH-0F-bBP"/>
-                                    <constraint firstItem="Bb3-Fe-Mb6" firstAttribute="leading" secondItem="jEK-Qq-p6A" secondAttribute="trailing" constant="35" id="HlA-Dz-8we"/>
-                                    <constraint firstItem="MaN-Dr-f7I" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="JTZ-o9-NzZ"/>
-                                    <constraint firstItem="gFo-Zp-dfh" firstAttribute="leading" secondItem="ULN-rm-tFb" secondAttribute="trailing" constant="35" id="N1B-8B-jlF"/>
-                                    <constraint firstItem="84e-r1-DV8" firstAttribute="leading" secondItem="E6M-9v-JaK" secondAttribute="leading" constant="25" id="O5D-cM-aki"/>
-                                    <constraint firstAttribute="bottom" secondItem="deX-QS-qwa" secondAttribute="bottom" constant="15" id="Pos-4G-nTQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="SeX-Uf-J0L" secondAttribute="bottom" constant="15" id="UUh-GO-bgv"/>
-                                    <constraint firstItem="cKt-Kl-CDH" firstAttribute="leading" secondItem="E6M-9v-JaK" secondAttribute="leading" constant="25" id="VHE-3y-vh2"/>
-                                    <constraint firstItem="oNY-rg-vK9" firstAttribute="leading" secondItem="aru-xl-qyA" secondAttribute="trailing" constant="35" id="WJb-Ge-Eah"/>
-                                    <constraint firstItem="oNY-rg-vK9" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="Y9m-4H-KqT"/>
-                                    <constraint firstItem="deX-QS-qwa" firstAttribute="leading" secondItem="cKt-Kl-CDH" secondAttribute="trailing" constant="5" id="ZA7-FS-fjk"/>
-                                    <constraint firstItem="84e-r1-DV8" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="Zoj-uW-B5T"/>
-                                    <constraint firstItem="jEK-Qq-p6A" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="bq7-eM-Gwb"/>
-                                    <constraint firstAttribute="width" constant="390" id="cp9-90-Xgh"/>
-                                    <constraint firstItem="aru-xl-qyA" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="dSW-8h-1nh"/>
-                                    <constraint firstAttribute="bottom" secondItem="BwL-VV-cbY" secondAttribute="bottom" constant="15" id="ifv-rF-cTK"/>
-                                    <constraint firstAttribute="bottom" secondItem="6nk-0j-7gy" secondAttribute="bottom" constant="15" id="jBX-Rl-dGA"/>
-                                    <constraint firstAttribute="height" constant="90" id="ju5-KC-k4T"/>
-                                    <constraint firstItem="SeX-Uf-J0L" firstAttribute="leading" secondItem="dgM-vY-c6q" secondAttribute="trailing" constant="5" id="o51-H2-vYf"/>
-                                    <constraint firstItem="O3q-Pv-DFF" firstAttribute="leading" secondItem="deX-QS-qwa" secondAttribute="trailing" constant="35" id="stH-nK-JwN"/>
-                                    <constraint firstItem="MaN-Dr-f7I" firstAttribute="leading" secondItem="gFo-Zp-dfh" secondAttribute="trailing" constant="5" id="uPO-1X-liU"/>
-                                    <constraint firstItem="ULN-rm-tFb" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="v7n-Ek-eO0"/>
-                                    <constraint firstItem="gFo-Zp-dfh" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="vkC-4q-4Ja"/>
-                                    <constraint firstItem="aru-xl-qyA" firstAttribute="leading" secondItem="Bb3-Fe-Mb6" secondAttribute="trailing" constant="5" id="yBk-Ci-nwO"/>
-                                    <constraint firstItem="ULN-rm-tFb" firstAttribute="leading" secondItem="oNY-rg-vK9" secondAttribute="trailing" constant="5" id="zW3-Oe-UIi"/>
+                                    <constraint firstItem="ULN-rm-tFb" firstAttribute="leading" secondItem="aru-xl-qyA" secondAttribute="trailing" constant="40" id="9KP-J6-zoB"/>
+                                    <constraint firstItem="jEK-Qq-p6A" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="BaK-FU-rzh"/>
+                                    <constraint firstAttribute="bottom" secondItem="2ZN-aV-3tY" secondAttribute="bottom" constant="10" id="BhX-l8-Z38"/>
+                                    <constraint firstItem="2ZN-aV-3tY" firstAttribute="leading" secondItem="deX-QS-qwa" secondAttribute="trailing" constant="40" id="Ji0-rl-W3d"/>
+                                    <constraint firstAttribute="width" constant="390" id="LIr-8t-uue"/>
+                                    <constraint firstAttribute="bottom" secondItem="6nk-0j-7gy" secondAttribute="bottom" constant="15" id="O44-1W-sbP"/>
+                                    <constraint firstItem="deX-QS-qwa" firstAttribute="leading" secondItem="E6M-9v-JaK" secondAttribute="leading" constant="15" id="QFA-ye-SGD"/>
+                                    <constraint firstItem="6nk-0j-7gy" firstAttribute="leading" secondItem="2ZN-aV-3tY" secondAttribute="trailing" constant="40" id="UG7-1I-9r2"/>
+                                    <constraint firstItem="MaN-Dr-f7I" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="Wvm-FX-Nsa"/>
+                                    <constraint firstAttribute="trailing" secondItem="MaN-Dr-f7I" secondAttribute="trailing" constant="15" id="XOM-RR-1JZ"/>
+                                    <constraint firstItem="aru-xl-qyA" firstAttribute="leading" secondItem="jEK-Qq-p6A" secondAttribute="trailing" constant="40" id="Xh3-fN-JYB"/>
+                                    <constraint firstAttribute="trailing" secondItem="SeX-Uf-J0L" secondAttribute="trailing" constant="15" id="jlh-fa-gUW"/>
+                                    <constraint firstItem="jEK-Qq-p6A" firstAttribute="leading" secondItem="E6M-9v-JaK" secondAttribute="leading" constant="15" id="l29-nT-8LR"/>
+                                    <constraint firstItem="aru-xl-qyA" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="t0n-zS-Qa5"/>
+                                    <constraint firstItem="ULN-rm-tFb" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="xTD-T5-66S"/>
+                                    <constraint firstAttribute="bottom" secondItem="deX-QS-qwa" secondAttribute="bottom" constant="10" id="yD4-7T-lcN"/>
+                                    <constraint firstAttribute="height" constant="90" id="yHE-9P-Qmt"/>
+                                    <constraint firstAttribute="bottom" secondItem="SeX-Uf-J0L" secondAttribute="bottom" constant="15" id="ymJ-pc-Gia"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44d-Kw-xK8">
@@ -549,8 +481,10 @@
                             <constraint firstItem="44d-Kw-xK8" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="bottom" id="O2y-IF-0rW"/>
                             <constraint firstItem="96Q-IR-CZk" firstAttribute="centerX" secondItem="2eO-VF-Gle" secondAttribute="centerX" id="cki-Fc-EHM"/>
                             <constraint firstItem="cSL-V0-K1C" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="bottom" constant="30" id="mi8-eu-k6O"/>
+                            <constraint firstItem="E6M-9v-JaK" firstAttribute="top" secondItem="uSm-Sy-LIE" secondAttribute="top" id="npl-ET-9MF"/>
                             <constraint firstItem="E6M-9v-JaK" firstAttribute="top" secondItem="uSm-Sy-LIE" secondAttribute="top" id="rfp-Mz-Szw"/>
                             <constraint firstItem="cSL-V0-K1C" firstAttribute="centerX" secondItem="2eO-VF-Gle" secondAttribute="centerX" id="sof-Y6-FkF"/>
+                            <constraint firstItem="E6M-9v-JaK" firstAttribute="centerX" secondItem="2eO-VF-Gle" secondAttribute="centerX" id="uYS-LS-0mF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Closet" image="archivebox.fill" catalog="system" id="2X5-Cw-aSP"/>
@@ -2597,6 +2531,11 @@
             <point key="canvasLocation" x="5858" y="394"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="aru-xl-qyA">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="archivebox.fill" catalog="system" width="128" height="106"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
