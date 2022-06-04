@@ -564,6 +564,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="삭제하기">
                                             <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnDeleteClicked:" destination="xOH-ds-pL0" eventType="touchUpInside" id="hnq-GZ-XMf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZH-TK-9um">
                                         <rect key="frame" x="25" y="655" width="330" height="30"/>

@@ -27,6 +27,16 @@ class ClothInfoEditViewController: UIViewController {
     var seasonText: String = "봄"
 
     
+    @IBAction func btnDeleteClicked(_ sender: Any) {
+        let deleteAlert = UIAlertController(title: "알림", message: "정말 삭제하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
+        let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
+            //여기에 삭제 코드 넣기
+            }
+        let no = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
+        deleteAlert.addAction(yes)
+        deleteAlert.addAction(no)
+        present(deleteAlert, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
