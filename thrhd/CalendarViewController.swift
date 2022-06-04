@@ -9,11 +9,21 @@ import UIKit
 import FSCalendar
 
 class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendarDelegate{
-
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     @IBOutlet weak var calendar: FSCalendar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if let data = UserDefaults.standard.value(forKey:"record") as? Data {
+            let record = try? PropertyListDecoder().decode(Array<record>.self, from: data)
+            appDelegate.recordInfo = record!
+        }
+        if let data = UserDefaults.standard.value(forKey:"name") as? Data {
+            let name = try? PropertyListDecoder().decode(Array<String>.self, from: data)
+            appDelegate.clothName = name!
+        }
         self.calendarColor()
         self.calendarText()
         self.calendarEvent()

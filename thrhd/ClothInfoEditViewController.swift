@@ -32,6 +32,15 @@ class ClothInfoEditViewController: UIViewController {
         let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {(_) in
             self.appDelegate.clothInfo.remove(at: self.appDelegate.idx)
             self.appDelegate.cnt -= 1
+            if let idx = self.appDelegate.clothName.firstIndex(of: self.editCloName.text!) {
+                self.appDelegate.clothName.remove(at: idx)
+            }
+            UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.clothInfo), forKey:"cloth")
+            
+            UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.clothName), forKey:"name")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                self.navigationController?.popViewController(animated: true)
+            }
         }
         let no = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
         deleteAlert.addAction(yes)
@@ -52,10 +61,16 @@ class ClothInfoEditViewController: UIViewController {
     }
     
     @IBAction func onBtnEdit(_ sender: UIButton) {
+        if let idx = appDelegate.clothName.firstIndex(of: editCloName.text!) {
+            appDelegate.clothName.remove(at: idx)
+        }
         appDelegate.clothInfo[appDelegate.idx].setCloName(ClothName: changeCloName.text!)
         appDelegate.clothInfo[appDelegate.idx].setCloCate(CloCate: clothText)
         appDelegate.clothInfo[appDelegate.idx].setSeaCate(SeaCate: seasonText)
+        appDelegate.clothName.append(changeCloName.text!)
         
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothInfo), forKey:"cloth")
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothName), forKey:"name")
         self.view.makeToast("수정되었습니다.", duration: 2.0, position: .bottom)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             self.navigationController?.popViewController(animated: true)

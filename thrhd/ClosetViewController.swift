@@ -12,7 +12,6 @@ import MobileCoreServices
 
 class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -21,7 +20,10 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if let data = UserDefaults.standard.value(forKey:"cloth") as? Data {
+            let cloth = try? PropertyListDecoder().decode(Array<imageInfo>.self, from: data)
+            appDelegate.clothInfo = cloth!
+        }
         collectionView.delegate = self
         collectionView.dataSource = self
         initRefresh()
