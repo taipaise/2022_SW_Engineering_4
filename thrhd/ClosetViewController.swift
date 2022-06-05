@@ -32,9 +32,6 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
     var list_bclo: [Bool] = [false, false, false, false]
     var list_bsea: [Bool] = [false, false, false, false]
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupGroup()
@@ -54,7 +51,7 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.dataSource = self
         initRefresh()
         print("collection view load")
-        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

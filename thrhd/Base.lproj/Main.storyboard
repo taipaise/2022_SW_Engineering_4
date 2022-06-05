@@ -367,115 +367,101 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6M-9v-JaK" customClass="CheckboxButtonContainerView" customModule="MBRadioCheckboxButton">
                                 <rect key="frame" x="12" y="88" width="390" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="상의" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84e-r1-DV8">
-                                        <rect key="frame" x="27" y="17" width="30" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="봄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKt-Kl-CDH">
-                                        <rect key="frame" x="27" y="56" width="15" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="하의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb3-Fe-Mb6">
-                                        <rect key="frame" x="101" y="17" width="30" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="아우터" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNY-rg-vK9">
-                                        <rect key="frame" x="204" y="17" width="45" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="신발" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFo-Zp-dfh">
-                                        <rect key="frame" x="305" y="17" width="30" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="여름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3q-Pv-DFF">
-                                        <rect key="frame" x="101" y="56" width="30" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="가을" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BwL-VV-cbY">
-                                        <rect key="frame" x="211" y="55" width="30" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="겨울" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgM-vY-c6q">
-                                        <rect key="frame" x="305" y="56" width="30" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-Qq-p6A" userLabel="상의" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="65" y="18" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="상의"/>
+
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-Qq-p6A" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="15" y="15" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="6et-eg-1lY"/>
+                                            <constraint firstAttribute="height" constant="30" id="Sn4-lQ-fYN"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="상의"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aru-xl-qyA" userLabel="하의" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="156" y="18" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="하의"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aru-xl-qyA" userLabel="하의" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="115" y="15" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="8lT-r8-u26"/>
+                                            <constraint firstAttribute="height" constant="30" id="EGW-I0-E0j"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="하의"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-rm-tFb" userLabel="아우터" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="265" y="17" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="아우터"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-rm-tFb" userLabel="아우터" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="215" y="15" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="YE6-RM-gxU"/>
+                                            <constraint firstAttribute="height" constant="30" id="c4d-On-Uwk"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="아우터"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-Dr-f7I" userLabel="신발" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="351" y="17" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="신발"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-Dr-f7I" userLabel="신발" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="315" y="15" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="AK6-5u-cuu"/>
+                                            <constraint firstAttribute="width" constant="60" id="Qn4-4S-Y1o"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="신발"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QS-qwa" userLabel="봄" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="65" y="55" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="봄"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QS-qwa" userLabel="봄" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="15" y="50" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="peI-eo-z2l"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="tqm-zN-2MC"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="봄"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZN-aV-3tY" userLabel="여름" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="156" y="55" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="여름"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-0j-7gy" userLabel="여름" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="215" y="45" width="70" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="IBY-Gt-wPo"/>
+                                            <constraint firstAttribute="width" constant="70" id="lNu-IT-FEp"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="가을"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nk-0j-7gy" userLabel="가을" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="264" y="53" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="가을"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeX-Uf-J0L" userLabel="가을" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="315" y="45" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="59S-eZ-WCW"/>
+                                            <constraint firstAttribute="width" constant="60" id="q83-fM-ymX"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="겨울"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SeX-Uf-J0L" userLabel="겨울" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
-                                        <rect key="frame" x="345" y="59" width="20" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="겨울"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZN-aV-3tY" userLabel="겨울" customClass="CheckboxButton" customModule="MBRadioCheckboxButton">
+                                        <rect key="frame" x="115" y="50" width="60" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="UlE-Gu-ZVG"/>
+                                            <constraint firstAttribute="height" constant="30" id="eAe-Fd-cSs"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="여름"/>
+
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="390" id="cp9-90-Xgh"/>
-                                    <constraint firstAttribute="height" constant="90" id="ju5-KC-k4T"/>
+                                    <constraint firstItem="ULN-rm-tFb" firstAttribute="leading" secondItem="aru-xl-qyA" secondAttribute="trailing" constant="40" id="9KP-J6-zoB"/>
+                                    <constraint firstItem="jEK-Qq-p6A" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="BaK-FU-rzh"/>
+                                    <constraint firstAttribute="bottom" secondItem="2ZN-aV-3tY" secondAttribute="bottom" constant="10" id="BhX-l8-Z38"/>
+                                    <constraint firstItem="2ZN-aV-3tY" firstAttribute="leading" secondItem="deX-QS-qwa" secondAttribute="trailing" constant="40" id="Ji0-rl-W3d"/>
+                                    <constraint firstAttribute="width" constant="390" id="LIr-8t-uue"/>
+                                    <constraint firstAttribute="bottom" secondItem="6nk-0j-7gy" secondAttribute="bottom" constant="15" id="O44-1W-sbP"/>
+                                    <constraint firstItem="deX-QS-qwa" firstAttribute="leading" secondItem="E6M-9v-JaK" secondAttribute="leading" constant="15" id="QFA-ye-SGD"/>
+                                    <constraint firstItem="6nk-0j-7gy" firstAttribute="leading" secondItem="2ZN-aV-3tY" secondAttribute="trailing" constant="40" id="UG7-1I-9r2"/>
+                                    <constraint firstItem="MaN-Dr-f7I" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="Wvm-FX-Nsa"/>
+                                    <constraint firstAttribute="trailing" secondItem="MaN-Dr-f7I" secondAttribute="trailing" constant="15" id="XOM-RR-1JZ"/>
+                                    <constraint firstItem="aru-xl-qyA" firstAttribute="leading" secondItem="jEK-Qq-p6A" secondAttribute="trailing" constant="40" id="Xh3-fN-JYB"/>
+                                    <constraint firstAttribute="trailing" secondItem="SeX-Uf-J0L" secondAttribute="trailing" constant="15" id="jlh-fa-gUW"/>
+                                    <constraint firstItem="jEK-Qq-p6A" firstAttribute="leading" secondItem="E6M-9v-JaK" secondAttribute="leading" constant="15" id="l29-nT-8LR"/>
+                                    <constraint firstItem="aru-xl-qyA" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="t0n-zS-Qa5"/>
+                                    <constraint firstItem="ULN-rm-tFb" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="top" constant="15" id="xTD-T5-66S"/>
+                                    <constraint firstAttribute="bottom" secondItem="deX-QS-qwa" secondAttribute="bottom" constant="10" id="yD4-7T-lcN"/>
+                                    <constraint firstAttribute="height" constant="90" id="yHE-9P-Qmt"/>
+                                    <constraint firstAttribute="bottom" secondItem="SeX-Uf-J0L" secondAttribute="bottom" constant="15" id="ymJ-pc-Gia"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44d-Kw-xK8">
@@ -500,8 +486,10 @@
                             <constraint firstItem="44d-Kw-xK8" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="bottom" id="O2y-IF-0rW"/>
                             <constraint firstItem="96Q-IR-CZk" firstAttribute="centerX" secondItem="2eO-VF-Gle" secondAttribute="centerX" id="cki-Fc-EHM"/>
                             <constraint firstItem="cSL-V0-K1C" firstAttribute="top" secondItem="E6M-9v-JaK" secondAttribute="bottom" constant="30" id="mi8-eu-k6O"/>
+                            <constraint firstItem="E6M-9v-JaK" firstAttribute="top" secondItem="uSm-Sy-LIE" secondAttribute="top" id="npl-ET-9MF"/>
                             <constraint firstItem="E6M-9v-JaK" firstAttribute="top" secondItem="uSm-Sy-LIE" secondAttribute="top" id="rfp-Mz-Szw"/>
                             <constraint firstItem="cSL-V0-K1C" firstAttribute="centerX" secondItem="2eO-VF-Gle" secondAttribute="centerX" id="sof-Y6-FkF"/>
+                            <constraint firstItem="E6M-9v-JaK" firstAttribute="centerX" secondItem="2eO-VF-Gle" secondAttribute="centerX" id="uYS-LS-0mF"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Closet" image="archivebox.fill" catalog="system" id="2X5-Cw-aSP"/>
@@ -2638,6 +2626,7 @@
         </scene>
     </scenes>
     <designables>
+
         <designable name="2ZN-aV-3tY">
             <size key="intrinsicContentSize" width="48.5" height="31"/>
         </designable>
@@ -2661,6 +2650,7 @@
         </designable>
         <designable name="jEK-Qq-p6A">
             <size key="intrinsicContentSize" width="48.5" height="31"/>
+
         </designable>
     </designables>
     <resources>
