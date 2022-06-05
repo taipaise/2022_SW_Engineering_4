@@ -12,6 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var clothInfo: [imageInfo] = [imageInfo]()
+    var tmp_clothInfo: [imageInfo] = [imageInfo]()
     var clothName = [String]()
     var recordInfo : [record] = [record]()
     
