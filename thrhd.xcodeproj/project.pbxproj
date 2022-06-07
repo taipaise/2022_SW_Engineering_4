@@ -11,6 +11,7 @@
 		001C30152845106600CFB6ED /* RecordUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001C30142845106600CFB6ED /* RecordUpdateViewController.swift */; };
 		0038FEDC283F587400F67FE9 /* RecordAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */; };
 		005C01DA2837238200C8EC5F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005C01D92837238200C8EC5F /* CalendarViewController.swift */; };
+		00686FDC284FC6FA0021090D /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00686FDB284FC6FA0021090D /* MypageViewController.swift */; };
 		006A9A65284A6A470087ED35 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006A9A64284A6A470087ED35 /* WeatherViewController.swift */; };
 		00951684282E527C009F6FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951683282E527C009F6FBA /* AppDelegate.swift */; };
 		00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951685282E527C009F6FBA /* SceneDelegate.swift */; };
@@ -54,6 +55,7 @@
 		001C30142845106600CFB6ED /* RecordUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordUpdateViewController.swift; sourceTree = "<group>"; };
 		0038FEDB283F587400F67FE9 /* RecordAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordAddViewController.swift; sourceTree = "<group>"; };
 		005C01D92837238200C8EC5F /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		00686FDB284FC6FA0021090D /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
 		006A9A64284A6A470087ED35 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		00951680282E527C009F6FBA /* thrhd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thrhd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00951683282E527C009F6FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,13 +137,14 @@
 				00951685282E527C009F6FBA /* SceneDelegate.swift */,
 				00951687282E527C009F6FBA /* ViewController.swift */,
 				5DB59246282E7C9A00A41A76 /* LoginViewController.swift */,
+				5D6D39B82843B30200A2A8E2 /* SignUpViewController.swift */,
+				5D6D39B62843B2E300A2A8E2 /* FindPwViewController.swift */,
+				5D6D39B42843B2CC00A2A8E2 /* FindIdViewController.swift */,
+				00686FDB284FC6FA0021090D /* MypageViewController.swift */,
 				00951697282E735C009F6FBA /* ClosetViewController.swift */,
 				5D6D3A1C284BE39F00A2A8E2 /* CategoryViewController.swift */,
 				5D6D3A1E284BE70D00A2A8E2 /* MyCollectionViewCell2.swift */,
 				005C01D92837238200C8EC5F /* CalendarViewController.swift */,
-				5D6D39B42843B2CC00A2A8E2 /* FindIdViewController.swift */,
-				5D6D39B62843B2E300A2A8E2 /* FindPwViewController.swift */,
-				5D6D39B82843B30200A2A8E2 /* SignUpViewController.swift */,
 				5D6D39B2283F51D600A2A8E2 /* ClothInfoEditViewController.swift */,
 				5D6D39AA283E821F00A2A8E2 /* ClothAddViewController.swift */,
 				5D6D39A8283E811300A2A8E2 /* MyCollectionViewCell.swift */,
@@ -365,6 +368,7 @@
 				00951686282E527C009F6FBA /* SceneDelegate.swift in Sources */,
 				5D6D3A10284BC5B800A2A8E2 /* RadioButtonContainer.swift in Sources */,
 				00AFA07528372DDC008516C9 /* DetailViewController.swift in Sources */,
+				00686FDC284FC6FA0021090D /* MypageViewController.swift in Sources */,
 				5D6D39AB283E821F00A2A8E2 /* ClothAddViewController.swift in Sources */,
 				5D6D3A19284BC5B800A2A8E2 /* CheckboxLineStyle.swift in Sources */,
 				5D6D3A15284BC5B800A2A8E2 /* CheckboxButton.swift in Sources */,

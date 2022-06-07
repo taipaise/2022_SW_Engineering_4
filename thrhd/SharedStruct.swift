@@ -116,3 +116,40 @@ struct record :Codable{
     }
 }
 
+struct user : Codable{
+    private var ID : String
+    private var PW : String
+    private var email : String
+    private var nickname : String
+    
+    init(ID : String, PW : String, email : String, nickname : String){
+        self.ID = ID
+        self.PW = PW
+        self.email = email
+        self.nickname = nickname
+    }
+    func getID() -> String{
+        return self.ID
+    }
+    func getPW() -> String{
+        return self.PW
+    }
+    func getEmail() -> String{
+        return self.email
+    }
+    func getNickname() -> String{
+        return self.nickname
+    }
+    mutating func setID(ID : String){
+        self.ID = ID
+    }
+    mutating func setPW(PW : String){
+        self.PW = PW
+    }
+    mutating func setEmail(email : String){
+        self.email = email
+    }
+    mutating func setNickname(nickname : String){
+        self.nickname = nickname
+    }
+}
