@@ -36,8 +36,8 @@ class ClothInfoEditViewController: UIViewController {
                 self.appDelegate.clothName.remove(at: idx)
             }
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.clothInfo), forKey:"cloth")
-            
             UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.clothName), forKey:"name")
+        
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 self.navigationController?.popViewController(animated: true)
             }

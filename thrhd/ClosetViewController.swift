@@ -13,6 +13,8 @@ import MBRadioCheckboxButton
 
 class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    
+    
     @IBOutlet weak var viewGroup: CheckboxButtonContainerView!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     @IBOutlet weak var collectionView: UICollectionView!
@@ -51,14 +53,16 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.dataSource = self
         initRefresh()
         print("collection view load")
-
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         collectionView.reloadData()
         print("appear")
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
+    
     
     func setupGroup(){
         viewGroup.buttonContainer.delegate = self
