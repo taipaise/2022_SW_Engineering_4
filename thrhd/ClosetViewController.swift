@@ -53,13 +53,14 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.dataSource = self
         initRefresh()
         print("collection view load")
-
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         collectionView.reloadData()
         print("appear")
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     

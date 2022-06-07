@@ -976,7 +976,7 @@
             <objects>
                 <viewController id="WSk-mm-G0C" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FcJ-vK-0PM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dX3-14-bPq">
@@ -1009,11 +1009,11 @@
             <objects>
                 <viewController id="iuN-sV-9Ux" customClass="MypageViewController" customModule="thrhd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RY2-m0-E1g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39e-s5-9Kd">
-                                <rect key="frame" x="20" y="118" width="374" height="714"/>
+                                <rect key="frame" x="20" y="86" width="374" height="726"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDu-IV-chh">
                                         <rect key="frame" x="20" y="100" width="334" height="300"/>
@@ -2154,7 +2154,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="RYo-GK-Mcb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kX7-Xd-Dr3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -2190,7 +2190,11 @@
                 <tabBarController storyboardIdentifier="TapController" automaticallyAdjustsScrollViewInsets="NO" id="36C-Tl-Ynr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="VEs-gQ-nR1">
-                        <barButtonItem key="rightBarButtonItem" image="sidebar.right" catalog="system" id="hu0-cN-ArE"/>
+                        <barButtonItem key="rightBarButtonItem" image="sidebar.right" catalog="system" id="hu0-cN-ArE">
+                            <connections>
+                                <segue destination="Ngh-0S-UP1" kind="show" id="X8l-l0-2SA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f9J-6a-gxZ">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
