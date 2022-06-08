@@ -35,8 +35,8 @@ class ClothInfoEditViewController: UIViewController {
             if let idx = self.appDelegate.clothName.firstIndex(of: self.editCloName.text!) {
                 self.appDelegate.clothName.remove(at: idx)
             }
-            UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.clothInfo), forKey:"cloth")
-            UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.clothName), forKey:"name")
+            UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.clothInfo), forKey:"\(self.appDelegate.userID)cloth")
+            UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.clothName), forKey:"\(self.appDelegate.userID)name")
         
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 self.navigationController?.popViewController(animated: true)
@@ -69,8 +69,8 @@ class ClothInfoEditViewController: UIViewController {
         appDelegate.clothInfo[appDelegate.idx].setSeaCate(SeaCate: seasonText)
         appDelegate.clothName.append(changeCloName.text!)
         
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothInfo), forKey:"cloth")
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothName), forKey:"name")
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothInfo), forKey:"\(appDelegate.userID)cloth")
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothName), forKey:"\(appDelegate.userID)name")
         self.view.makeToast("수정되었습니다.", duration: 2.0, position: .bottom)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             self.navigationController?.popViewController(animated: true)

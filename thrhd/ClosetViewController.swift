@@ -45,7 +45,7 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         summerChecked = false
         fallChecked = false
         winterChecked = false
-        if let data = UserDefaults.standard.value(forKey:"cloth") as? Data {
+        if let data = UserDefaults.standard.value(forKey: "\(appDelegate.userID)cloth") as? Data {
             let cloth = try? PropertyListDecoder().decode(Array<imageInfo>.self, from: data)
             appDelegate.clothInfo = cloth!
         }

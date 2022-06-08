@@ -306,7 +306,7 @@ class RecordAddViewController: UIViewController {
         appDelegate.recCnt += 1
         print("record struct array length: ", appDelegate.recordInfo.count)
 
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.recordInfo), forKey:"record")
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.recordInfo), forKey:"\(appDelegate.userID)record")
         
         self.view.makeToast("추가되었습니다.", duration: 2.0, position: .bottom)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
