@@ -2184,10 +2184,10 @@
             </objects>
             <point key="canvasLocation" x="325" y="-279"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tap View Controller-->
         <scene sceneID="XPV-2H-fJr">
             <objects>
-                <tabBarController storyboardIdentifier="TapController" automaticallyAdjustsScrollViewInsets="NO" id="36C-Tl-Ynr" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TapController" automaticallyAdjustsScrollViewInsets="NO" id="36C-Tl-Ynr" customClass="MainTapViewController" customModule="thrhd" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="VEs-gQ-nR1">
                         <barButtonItem key="rightBarButtonItem" image="sidebar.right" catalog="system" id="hu0-cN-ArE">
@@ -2740,6 +2740,32 @@
             <point key="canvasLocation" x="6287" y="-143"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="2ZN-aV-3tY">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="6nk-0j-7gy">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="MaN-Dr-f7I">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="SeX-Uf-J0L">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="ULN-rm-tFb">
+            <size key="intrinsicContentSize" width="39" height="30"/>
+        </designable>
+        <designable name="aru-xl-qyA">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="deX-QS-qwa">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="jEK-Qq-p6A">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="archivebox.fill" catalog="system" width="128" height="106"/>
         <image name="calendar" catalog="system" width="128" height="106"/>

@@ -58,6 +58,10 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        if let data = UserDefaults.standard.value(forKey: "\(appDelegate.userID)cloth") as? Data {
+            let cloth = try? PropertyListDecoder().decode(Array<imageInfo>.self, from: data)
+            appDelegate.clothInfo = cloth!
+        }
         collectionView.reloadData()
         print("appear")
         self.navigationItem.setHidesBackButton(true, animated: true)
