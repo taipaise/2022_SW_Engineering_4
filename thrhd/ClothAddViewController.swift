@@ -95,8 +95,8 @@ class ClothAddViewController: UIViewController, UIImagePickerControllerDelegate,
         appDelegate.cnt += 1
         print("struct array length: ", appDelegate.clothInfo.count)
         
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothInfo), forKey:"cloth")
-        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothName), forKey:"name")
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothInfo), forKey:"\(appDelegate.userID)cloth")
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.clothName), forKey:"\(appDelegate.userID)name")
         
         self.view.makeToast("추가되었습니다.", duration: 2.0, position: .bottom)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {

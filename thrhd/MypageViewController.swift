@@ -56,6 +56,13 @@ class MypageViewController: UIViewController {
             deleteAlert.addAction(no)
             present(deleteAlert, animated: true, completion: nil)
         }
+        else{
+            let errMsg = UIAlertController(title: "알림", message: "PW가 올바르지 않습니다.", preferredStyle: UIAlertController.Style.alert)
+            let ok = UIAlertAction(title: "닫기", style: UIAlertAction.Style.default, handler: nil)
+            errMsg.addAction(ok)
+            present(errMsg, animated: true, completion: nil)
+            return
+        }
         
         
     }

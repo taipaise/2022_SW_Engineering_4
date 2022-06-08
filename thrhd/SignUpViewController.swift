@@ -81,7 +81,7 @@ class SignUpViewController: UIViewController {
             }
             
             appDelegate.userInfo.append(user(ID: idTextField.text!, PW: pwTextField.text!, email: emailTextField.text!, nickname: nicknameTextField.text!))
-            UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.recordInfo), forKey:"record")
+            UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.recordInfo), forKey:"\(appDelegate.userID)record")
             let msg = UIAlertController(title: "알림", message: "회원가입이 완료되었습니다.", preferredStyle: UIAlertController.Style.alert)
             let ok = UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: nil)
             msg.addAction(ok)

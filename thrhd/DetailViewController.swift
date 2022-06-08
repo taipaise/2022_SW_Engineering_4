@@ -80,7 +80,7 @@ class DetailViewController: UIViewController {
             let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
                 _ in self.appDelegate.recordInfo.remove(at: isExist)
                 self.appDelegate.recCnt -= 1
-                UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.recordInfo), forKey:"record")
+                UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.recordInfo), forKey:"\(self.appDelegate.userID)record")
                 self.view.makeToast("삭제되었습니다.", duration: 1.0, position: .bottom)
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                     self.navigationController?.popViewController(animated: true)

@@ -16,11 +16,11 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let data = UserDefaults.standard.value(forKey:"record") as? Data {
+        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)record") as? Data {
             let record = try? PropertyListDecoder().decode(Array<record>.self, from: data)
             appDelegate.recordInfo = record!
         }
-        if let data = UserDefaults.standard.value(forKey:"name") as? Data {
+        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)name") as? Data {
             let name = try? PropertyListDecoder().decode(Array<String>.self, from: data)
             appDelegate.clothName = name!
         }
