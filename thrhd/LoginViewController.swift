@@ -38,6 +38,10 @@ class LoginViewController: UIViewController {
                 appDelegate.userID = idTextField.text!
                 guard let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "TapController") else { return }
                 self.navigationController?.pushViewController(homeVC, animated: true)
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let mainTabBarController = storyboard.instantiateViewController(identifier: "TapController")
+//                mainTabBarController.modalPresentationStyle = .fullScreen
+//                self.present(mainTabBarController, animated: true, completion: nil)
             }
             else{
                 let errMsg = UIAlertController(title: "알림", message: "ID, 비밀번호를 확인해주세요", preferredStyle: UIAlertController.Style.alert)

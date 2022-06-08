@@ -21,6 +21,7 @@
 		00951690282E527E009F6FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0095168E282E527E009F6FBA /* LaunchScreen.storyboard */; };
 		00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951697282E735C009F6FBA /* ClosetViewController.swift */; };
 		00AFA07528372DDC008516C9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AFA07428372DDC008516C9 /* DetailViewController.swift */; };
+		00E89DFE2850EAF900A58606 /* MainTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E89DFD2850EAF900A58606 /* MainTapViewController.swift */; };
 		00F3E57C284AFB7600F0822F /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3E57B284AFB7600F0822F /* weather.swift */; };
 		00F3E580284B021400F0822F /* WEATHER.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00F3E57F284B021400F0822F /* WEATHER.plist */; };
 		00F3E582284B0B5100F0822F /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3E581284B0B5100F0822F /* WeatherService.swift */; };
@@ -67,6 +68,7 @@
 		00951691282E527E009F6FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00951697282E735C009F6FBA /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		00AFA07428372DDC008516C9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		00E89DFD2850EAF900A58606 /* MainTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTapViewController.swift; sourceTree = "<group>"; };
 		00F3E57B284AFB7600F0822F /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 		00F3E57F284B021400F0822F /* WEATHER.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WEATHER.plist; sourceTree = "<group>"; };
 		00F3E581284B0B5100F0822F /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				00951691282E527E009F6FBA /* Info.plist */,
 				00F3E57F284B021400F0822F /* WEATHER.plist */,
 				001C3012284504F100CFB6ED /* jwt.swift */,
+				00E89DFD2850EAF900A58606 /* MainTapViewController.swift */,
 			);
 			path = thrhd;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F3E582284B0B5100F0822F /* WeatherService.swift in Sources */,
+				00E89DFE2850EAF900A58606 /* MainTapViewController.swift in Sources */,
 				5D6D39B72843B2E300A2A8E2 /* FindPwViewController.swift in Sources */,
 				006A9A65284A6A470087ED35 /* WeatherViewController.swift in Sources */,
 				0038FEDC283F587400F67FE9 /* RecordAddViewController.swift in Sources */,

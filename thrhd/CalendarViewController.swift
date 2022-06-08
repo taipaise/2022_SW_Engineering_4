@@ -28,7 +28,22 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         self.calendarText()
         self.calendarEvent()
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)record") as? Data {
+            let record = try? PropertyListDecoder().decode(Array<record>.self, from: data)
+            appDelegate.recordInfo = record!
+        }
+        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)name") as? Data {
+            let name = try? PropertyListDecoder().decode(Array<String>.self, from: data)
+            appDelegate.clothName = name!
+        }
+        print("appear")
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
+    
     func calendarColor() {
         // 달력의 평일 날짜 색깔
         calendar.appearance.titleDefaultColor = .black
