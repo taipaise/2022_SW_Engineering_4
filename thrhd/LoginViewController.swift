@@ -12,8 +12,11 @@ import SwiftyJSON
 class LoginViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +24,21 @@ class LoginViewController: UIViewController {
             let users = try? PropertyListDecoder().decode(Array<user>.self, from: data)
             appDelegate.userInfo = users!
             appDelegate.userInfo.append(user(ID: "admin", PW: "admin", email: "admin", nickname: "admin"))
+            self.view.window?.rootViewController = self// 루트 뷰 컨트롤러로 사용
+            pwTextField.isSecureTextEntry = true
+            for (key, value) in UserDefaults.standard.dictionaryRepresentation() {
+               print("\(key) = \(value) \\n")
+             }
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        self.navigationController?.popToRootViewController(animated: false)
+        appDelegate.clothInfo = []
+        appDelegate.recordInfo = []
+        appDelegate.clothName = []
+    }
     
     @IBAction func btnLoginClicked(_ sender: Any) {
         if idTextField.text! == "" || pwTextField.text! == ""{

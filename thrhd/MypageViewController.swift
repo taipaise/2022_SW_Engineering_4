@@ -21,11 +21,12 @@ class MypageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let isExist = self.appDelegate.userInfo.firstIndex(where: {$0.getID() == appDelegate.userID}){
-            labelID.text = appDelegate.userInfo[isExist].getID()
-            labelNickname.text = appDelegate.userInfo[isExist].getNickname()
-            labelEmail.text = appDelegate.userInfo[isExist].getEmail()
+            labelID.text = "ID: \(appDelegate.userInfo[isExist].getID())"
+            labelNickname.text = "Nick name: \(appDelegate.userInfo[isExist].getNickname())"
+            labelEmail.text = "Email: \(appDelegate.userInfo[isExist].getEmail())"
             index = isExist
         }
+        tfPassword.isSecureTextEntry = true
         // Do any additional setup after loading the view.
     }
     
@@ -41,19 +42,21 @@ class MypageViewController: UIViewController {
         }
         if appDelegate.userInfo[index].getPW() == tfPassword.text!{
             let deleteAlert = UIAlertController(title: "경고", message: "정말 삭제하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
-            let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
+            let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.destructive) {
                 _ in self.appDelegate.userInfo.remove(at: self.index)
                 UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.userInfo), forKey:"user")
+                UserDefaults.standard.removeObject(forKey: "\(self.appDelegate.userID)cloth")
+                UserDefaults.standard.removeObject(forKey: "\(self.appDelegate.userID)record")
+                UserDefaults.standard.removeObject(forKey: "\(self.appDelegate.userID)name")
                 self.view.makeToast("삭제되었습니다.", duration: 1.0, position: .bottom)
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                     guard let LoginViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") else { return }
-                    LoginViewController.modalPresentationStyle = .fullScreen
-                    self.present(LoginViewController, animated: true, completion: nil)
+                    self.navigationController?.pushViewController(LoginViewController, animated: true)
                 }
             }
             let no = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
-            deleteAlert.addAction(yes)
             deleteAlert.addAction(no)
+            deleteAlert.addAction(yes)
             present(deleteAlert, animated: true, completion: nil)
         }
         else{
