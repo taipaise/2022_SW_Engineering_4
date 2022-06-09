@@ -230,7 +230,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5or-IO-RUb">
-                                <rect key="frame" x="95" y="192" width="278" height="34"/>
+                                <rect key="frame" x="95" y="192" width="188" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -250,33 +250,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGa-DA-FH3">
-                                <rect key="frame" x="95" y="437" width="278" height="34"/>
+                                <rect key="frame" x="95" y="537" width="278" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter Nickname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FbF-qY-c0A">
-                                <rect key="frame" x="95" y="353" width="278" height="34"/>
+                                <rect key="frame" x="95" y="453" width="278" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nickname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6P-xo-6Za">
-                                <rect key="frame" x="20" y="353" width="67" height="34"/>
+                                <rect key="frame" x="20" y="453" width="67" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elx-iz-bsg">
-                                <rect key="frame" x="20" y="437" width="67" height="34"/>
+                                <rect key="frame" x="20" y="537" width="67" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-Pe-VYW">
-                                <rect key="frame" x="20" y="563" width="353" height="31"/>
+                                <rect key="frame" x="20" y="616" width="353" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="회원가입"/>
@@ -284,11 +284,27 @@
                                     <action selector="onBtnSignUp:" destination="heT-tv-MPC" eventType="touchUpInside" id="ANk-xc-vW9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-xy-bVs">
-                                <rect key="frame" x="20" y="512" width="353" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PW확인" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-dC-0MG">
+                                <rect key="frame" x="20" y="368" width="67" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="re-enter PW" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfW-8Z-TCZ">
+                                <rect key="frame" x="96" y="368" width="278" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-xy-bVs">
+                                <rect key="frame" x="299" y="192" width="75" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ID 중복 확인"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ID 확인">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="10"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="btnDuplicateClicked:" destination="heT-tv-MPC" eventType="touchUpInside" id="1Ac-0E-h6C"/>
                                 </connections>
@@ -299,10 +315,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="n8I-K3-DOc"/>
                     <connections>
+                        <outlet property="btnDuplicate" destination="2Yf-xy-bVs" id="88l-db-OZv"/>
                         <outlet property="emailTextField" destination="TGa-DA-FH3" id="tNe-x4-6QY"/>
                         <outlet property="idTextField" destination="5or-IO-RUb" id="yco-MV-XVb"/>
                         <outlet property="nicknameTextField" destination="FbF-qY-c0A" id="Vhj-4L-Wym"/>
                         <outlet property="pwTextField" destination="h5U-z4-LIY" id="c7Q-FC-NTX"/>
+                        <outlet property="reEnterTextField" destination="WfW-8Z-TCZ" id="h2k-LD-ygA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRi-3R-zOy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2751,6 +2769,9 @@
         <image name="sun.max" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

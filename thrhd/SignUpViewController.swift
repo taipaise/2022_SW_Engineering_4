@@ -16,12 +16,19 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var pwTextField: UITextField!
     @IBOutlet weak var nicknameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var reEnterTextField: UITextField!
+    @IBOutlet weak var btnDuplicate: UIButton!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         duplicate = true
         pwTextField.isSecureTextEntry = true
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        duplicate = true
     }
     
     func isValidPassword(pwd: String) -> Bool {
@@ -39,7 +46,7 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func btnDuplicateClicked(_ sender: Any) {
-        if self.appDelegate.userInfo.firstIndex(where: {$0.getID() == idTextField.text!}) != nil{
+        if (idTextField.text! == "") || self.appDelegate.userInfo.firstIndex(where: {$0.getID() == idTextField.text!}) != nil{
             let errMsg = UIAlertController(title: "알림", message: "해당 ID는 사용할 수 없습니다.", preferredStyle: UIAlertController.Style.alert)
             let ok = UIAlertAction(title: "닫기", style: UIAlertAction.Style.default, handler: nil)
             errMsg.addAction(ok)
