@@ -77,7 +77,7 @@ class DetailViewController: UIViewController {
     @IBAction func btnDeleteClicked(_ sender: Any) {
         if let isExist = self.appDelegate.recordInfo.firstIndex(where: {$0.getCloDate() == date}){
             let deleteAlert = UIAlertController(title: "알림", message: "정말 삭제하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
-            let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.default) {
+            let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.destructive) {
                 _ in self.appDelegate.recordInfo.remove(at: isExist)
                 self.appDelegate.recCnt -= 1
                 UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.recordInfo), forKey:"\(self.appDelegate.userID)record")
@@ -87,8 +87,8 @@ class DetailViewController: UIViewController {
                 }
             }
             let no = UIAlertAction(title: "아니오", style: UIAlertAction.Style.default, handler: nil)
-            deleteAlert.addAction(yes)
             deleteAlert.addAction(no)
+            deleteAlert.addAction(yes)
             present(deleteAlert, animated: true, completion: nil)
         }else{
             let errMsg = UIAlertController(title: "알림", message: "삭제할 기록이 없습니다.", preferredStyle: UIAlertController.Style.alert)
