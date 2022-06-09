@@ -22,6 +22,7 @@
 		00951698282E735C009F6FBA /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00951697282E735C009F6FBA /* ClosetViewController.swift */; };
 		00AFA07528372DDC008516C9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AFA07428372DDC008516C9 /* DetailViewController.swift */; };
 		00E89DFE2850EAF900A58606 /* MainTapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E89DFD2850EAF900A58606 /* MainTapViewController.swift */; };
+		00E89E002851CDEB00A58606 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E89DFF2851CDEB00A58606 /* SideMenuViewController.swift */; };
 		00F3E57C284AFB7600F0822F /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3E57B284AFB7600F0822F /* weather.swift */; };
 		00F3E580284B021400F0822F /* WEATHER.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00F3E57F284B021400F0822F /* WEATHER.plist */; };
 		00F3E582284B0B5100F0822F /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F3E581284B0B5100F0822F /* WeatherService.swift */; };
@@ -69,6 +70,7 @@
 		00951697282E735C009F6FBA /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
 		00AFA07428372DDC008516C9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		00E89DFD2850EAF900A58606 /* MainTapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTapViewController.swift; sourceTree = "<group>"; };
+		00E89DFF2851CDEB00A58606 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		00F3E57B284AFB7600F0822F /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 		00F3E57F284B021400F0822F /* WEATHER.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WEATHER.plist; sourceTree = "<group>"; };
 		00F3E581284B0B5100F0822F /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -156,14 +158,15 @@
 				006A9A64284A6A470087ED35 /* WeatherViewController.swift */,
 				00F3E581284B0B5100F0822F /* WeatherService.swift */,
 				00F3E57B284AFB7600F0822F /* weather.swift */,
-				0095168C282E527E009F6FBA /* Assets.xcassets */,
+				00E89DFD2850EAF900A58606 /* MainTapViewController.swift */,
+				00E89DFF2851CDEB00A58606 /* SideMenuViewController.swift */,
 				00951689282E527C009F6FBA /* Main.storyboard */,
-				5D6D3A20284BEE1600A2A8E2 /* testViewController.swift */,
 				0095168E282E527E009F6FBA /* LaunchScreen.storyboard */,
+				0095168C282E527E009F6FBA /* Assets.xcassets */,
+				5D6D3A20284BEE1600A2A8E2 /* testViewController.swift */,
 				00951691282E527E009F6FBA /* Info.plist */,
 				00F3E57F284B021400F0822F /* WEATHER.plist */,
 				001C3012284504F100CFB6ED /* jwt.swift */,
-				00E89DFD2850EAF900A58606 /* MainTapViewController.swift */,
 			);
 			path = thrhd;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				5D6D39B3283F51D600A2A8E2 /* ClothInfoEditViewController.swift in Sources */,
 				5D6D3A12284BC5B800A2A8E2 /* RadioButtonContainerView.swift in Sources */,
 				5D6D3A1D284BE39F00A2A8E2 /* CategoryViewController.swift in Sources */,
+				00E89E002851CDEB00A58606 /* SideMenuViewController.swift in Sources */,
 				5D6D3A16284BC5B800A2A8E2 /* CheckboxButtonContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
