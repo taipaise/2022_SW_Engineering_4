@@ -295,19 +295,28 @@ class RecordAddViewController: UIViewController {
         comment = tfComment.text!
 
         appDelegate.recordInfo.append(record(top: topName, bottom: bottomName, outer: outerName, shoes: shoesName, date: date, rating: rating, comment: comment))
-
-        print(appDelegate.recordInfo[appDelegate.recCnt].getCloTop())
-        print(appDelegate.recordInfo[appDelegate.recCnt].getCloBtm())
-        print(appDelegate.recordInfo[appDelegate.recCnt].getCloOut())
-        print(appDelegate.recordInfo[appDelegate.recCnt].getCloOut())
-        print(appDelegate.recordInfo[appDelegate.recCnt].getClosho())
-        print(appDelegate.recordInfo[appDelegate.recCnt].getCloRate())
-        print(appDelegate.recordInfo[appDelegate.recCnt].getCloCom())
         appDelegate.recCnt += 1
+//        print(appDelegate.recordInfo[appDelegate.recCnt].getCloTop())
+//        print(appDelegate.recordInfo[appDelegate.recCnt].getCloBtm())
+//        print(appDelegate.recordInfo[appDelegate.recCnt].getCloOut())
+//        print(appDelegate.recordInfo[appDelegate.recCnt].getCloOut())
+//        print(appDelegate.recordInfo[appDelegate.recCnt].getClosho())
+//        print(appDelegate.recordInfo[appDelegate.recCnt].getCloRate())
+//        print(appDelegate.recordInfo[appDelegate.recCnt].getCloCom())
+        
         print("record struct array length: ", appDelegate.recordInfo.count)
 
         UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.recordInfo), forKey:"\(appDelegate.userID)record")
         
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.dateFormat = "yyyy-MM-dd"
+        let dateString = formatter.date(from: date)
+        appDelegate.date.append(dateString!)
+
+        UserDefaults.standard.set(try? PropertyListEncoder().encode(appDelegate.date), forKey:"\(appDelegate.userID)dates")
+        
+        //appDelegate.date.append(contentsOf: Date(date))
         self.view.makeToast("추가되었습니다.", duration: 2.0, position: .bottom)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             self.navigationController?.popViewController(animated: true)

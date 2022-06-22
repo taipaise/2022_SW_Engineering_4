@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 @main
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var recordInfo : [record] = [record]()
     var userInfo : [user] = [user]()
     var userID : String = ""
+    var date : [Date] = [Date]()
     
     var cnt: Int = 0
     var idx: Int = 0 //옷 정보 수정 page의 index

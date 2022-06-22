@@ -11,11 +11,14 @@ import FSCalendar
 class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendarDelegate{
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
+ 
     @IBOutlet weak var calendar: FSCalendar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
+        
         if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)record") as? Data {
             let record = try? PropertyListDecoder().decode(Array<record>.self, from: data)
             appDelegate.recordInfo = record!
@@ -24,6 +27,12 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
             let name = try? PropertyListDecoder().decode(Array<String>.self, from: data)
             appDelegate.clothName = name!
         }
+        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)dates") as? Data {
+            let dates = try? PropertyListDecoder().decode(Array<Date>.self, from: data)
+            appDelegate.date = dates!
+        }
+        calendar.appearance.eventDefaultColor = UIColor.red
+        calendar.appearance.eventSelectionColor = UIColor.red
         self.calendarColor()
         self.calendarText()
         self.calendarEvent()
@@ -31,15 +40,17 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)record") as? Data {
-            let record = try? PropertyListDecoder().decode(Array<record>.self, from: data)
-            appDelegate.recordInfo = record!
-        }
-        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)name") as? Data {
-            let name = try? PropertyListDecoder().decode(Array<String>.self, from: data)
-            appDelegate.clothName = name!
-        }
+        viewDidLoad()
+//        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)record") as? Data {
+//            let record = try? PropertyListDecoder().decode(Array<record>.self, from: data)
+//            appDelegate.recordInfo = record!
+//        }
+//        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)name") as? Data {
+//            let name = try? PropertyListDecoder().decode(Array<String>.self, from: data)
+//            appDelegate.clothName = name!
+//        }
         print("appear")
+        print(appDelegate.date)
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
@@ -84,10 +95,17 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         modalPresentView.date = dateFormatter.string(from: date)
         self.navigationController?.pushViewController(modalPresentView, animated: true)
     }
-    
+    func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
+        if appDelegate.date.contains(date) {
+            return 1
+        } else {
+            return 0
+        }
+    }
     func calendarEvent() {
         calendar.dataSource = self
         calendar.delegate = self
     }
 }
+
 
