@@ -9,7 +9,11 @@ import UIKit
 
 class CategoryViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var labelSeason: UILabel!
+    @IBOutlet weak var labelFeature: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    var seasonText : String!
+    var featureText : String!
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
 
@@ -18,6 +22,8 @@ class CategoryViewController: UIViewController, UICollectionViewDelegate, UIColl
         print("load: ", appDelegate.tmp_clothInfo.count)
         collectionView.delegate = self
         collectionView.dataSource = self
+        labelSeason.text = seasonText
+        labelFeature.text = featureText
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return appDelegate.tmp_clothInfo.count
