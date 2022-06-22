@@ -32,7 +32,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
+    var dateString : Date!
     
     
     @IBOutlet var all: UIView!
@@ -80,7 +80,11 @@ class DetailViewController: UIViewController {
             let yes = UIAlertAction(title: "네", style: UIAlertAction.Style.destructive) {
                 _ in self.appDelegate.recordInfo.remove(at: isExist)
                 self.appDelegate.recCnt -= 1
+                if let idx = self.appDelegate.date.firstIndex(of: self.dateString) {
+                    self.appDelegate.date.remove(at: idx)
+                }
                 UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.recordInfo), forKey:"\(self.appDelegate.userID)record")
+                UserDefaults.standard.set(try? PropertyListEncoder().encode(self.appDelegate.date), forKey:"\(self.appDelegate.userID)dates")
                 self.view.makeToast("삭제되었습니다.", duration: 1.0, position: .bottom)
                 DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                     self.navigationController?.popViewController(animated: true)
@@ -103,6 +107,11 @@ class DetailViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.dateFormat = "yyyy-MM-dd"
+        dateString = formatter.date(from: date)
+        
         self.myLabel.text = date
         top.image = #imageLiteral(resourceName: "top")
         bottom.image = #imageLiteral(resourceName: "bottom")
