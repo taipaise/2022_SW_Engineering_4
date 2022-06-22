@@ -17,8 +17,6 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
         if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)record") as? Data {
             let record = try? PropertyListDecoder().decode(Array<record>.self, from: data)
             appDelegate.recordInfo = record!
@@ -40,6 +38,7 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        calendar.reloadData()
         viewDidLoad()
 //        if let data = UserDefaults.standard.value(forKey:"\(appDelegate.userID)record") as? Data {
 //            let record = try? PropertyListDecoder().decode(Array<record>.self, from: data)
@@ -106,6 +105,7 @@ class CalendarViewController: UIViewController, FSCalendarDataSource, FSCalendar
         calendar.dataSource = self
         calendar.delegate = self
     }
+    
 }
 
 
