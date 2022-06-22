@@ -52,6 +52,8 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         collectionView.delegate = self
         collectionView.dataSource = self
         initRefresh()
+        list_cloth.removeAll()
+        list_season.removeAll()
         print("collection view load")
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
@@ -273,11 +275,15 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
                 }
         
         print(list_bclo)
-        print(appDelegate.clothInfo[0].getCloCate())
+        //print(appDelegate.clothInfo[0].getCloCate())
         //print(tmp_list[0].getCloName())
         appDelegate.tmp_clothInfo = tmp_list
-        let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "category")
-        self.navigationController?.pushViewController(pushVC!, animated: true)
+        guard let pushVC =  storyboard?.instantiateViewController(identifier: "category") as? CategoryViewController else{ return }
+        if list_season.isEmpty{ pushVC.seasonText = "없음"
+        }else{ pushVC.seasonText = Array(Set(list_season)).joined(separator: ",") }
+        if list_cloth.isEmpty{pushVC.featureText = "없음"}else{ pushVC.featureText = list_cloth.joined(separator: ",")}
+        //let pushVC = self.storyboard?.instantiateViewController(withIdentifier: "category")
+        self.navigationController?.pushViewController(pushVC, animated: true)
     }
     
     
