@@ -152,127 +152,127 @@ class ClosetViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         print("bp: ", appDelegate.cnt)
         for i in 0..<Int(appDelegate.clothInfo.count) {
-            print(appDelegate.clothInfo.count)
-            for j in 0...3{
-                if list_bclo[j] == true, j == 0, appDelegate.clothInfo[i].getCloCate() == "상의"{
-                    print("pass")
-                    if list_bsea[0] == true, appDelegate.clothInfo[i].getSeaCate() == "봄"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[1] == true, appDelegate.clothInfo[i].getSeaCate() == "여름"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[2] == true, appDelegate.clothInfo[i].getSeaCate() == "가을"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[3] == true, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                }
-                if list_bclo[j] == true, j == 1, appDelegate.clothInfo[i].getCloCate() == "하의"{
-                    print("pass")
-                    if list_bsea[0] == true, appDelegate.clothInfo[i].getSeaCate() == "봄"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[1] == true, appDelegate.clothInfo[i].getSeaCate() == "여름"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[2] == true, appDelegate.clothInfo[i].getSeaCate() == "가을"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[3] == true, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                }
-                if list_bclo[j] == true, j == 2, appDelegate.clothInfo[i].getCloCate() == "아우터"{
-                    print("pass")
-                    if list_bsea[0] == true , appDelegate.clothInfo[i].getSeaCate() == "봄"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[1] == true, appDelegate.clothInfo[i].getSeaCate() == "여름"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[2] == true, appDelegate.clothInfo[i].getSeaCate() == "가을"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[3] == true, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                }
-                if list_bclo[j] == true, j == 3, appDelegate.clothInfo[i].getCloCate() == "신발"{
-                    print("pass")
-                    if list_bsea[0] == true, appDelegate.clothInfo[i].getSeaCate() == "봄"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[1] == true, appDelegate.clothInfo[i].getSeaCate() == "여름"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[2] == true, appDelegate.clothInfo[i].getSeaCate() == "가을"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                    else if list_bsea[3] == true, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
-                        tmp_list.append(appDelegate.clothInfo[i])
-                        print("append: ", appDelegate.clothInfo[i].getCloCate())
-                    }
-                }
-                
-            }
-        }
-                if !list_bclo.contains(true) {
-                    for i in 0..<Int(appDelegate.clothInfo.count) {
-                        print(appDelegate.clothInfo.count)
-                        for j in 0...3{
-                            if list_bsea[j] == true, j == 0, appDelegate.clothInfo[i].getSeaCate() == "봄"{
-                                tmp_list.append(appDelegate.clothInfo[i])
-                            }
-                            if list_bsea[j] == true, j == 1, appDelegate.clothInfo[i].getSeaCate() == "여름"{
-                                tmp_list.append(appDelegate.clothInfo[i])
-                            }
-                            if list_bsea[j] == true, j == 2, appDelegate.clothInfo[i].getSeaCate() == "여름"{
-                                tmp_list.append(appDelegate.clothInfo[i])
-                            }
-                            if list_bsea[j] == true, j == 3, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
-                                tmp_list.append(appDelegate.clothInfo[i])
-                            }
-                            
-                        }
-                }
-                }
-                if !list_bsea.contains(true) {
-                    for i in 0..<Int(appDelegate.clothInfo.count) {
-                        print(appDelegate.clothInfo.count)
-                        for j in 0...3{
-                            if list_bclo[j] == true, j == 0, appDelegate.clothInfo[i].getCloCate() == "상의"{
-                                tmp_list.append(appDelegate.clothInfo[i])
-                            }
-                            if list_bclo[j] == true, j == 1, appDelegate.clothInfo[i].getCloCate() == "하의"{
-                                tmp_list.append(appDelegate.clothInfo[i])
-                            }
-                            if list_bclo[j] == true, j == 2, appDelegate.clothInfo[i].getCloCate() == "아우터"{
-                                tmp_list.append(appDelegate.clothInfo[i])
-                            }
-                            if list_bclo[j] == true, j == 3, appDelegate.clothInfo[i].getCloCate() == "신발"{
-                                tmp_list.append(appDelegate.clothInfo[i])
-                            }
-                            
-                        }
-                }
-                }
+                   print(appDelegate.clothInfo.count)
+                   for j in 0...3{
+                       if list_bclo[j] == true, j == 0, appDelegate.clothInfo[i].getCloCate() == "상의"{
+                           print("pass")
+                           if list_bsea[0] == true, appDelegate.clothInfo[i].getSeaCate() == "봄"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[1] == true, appDelegate.clothInfo[i].getSeaCate() == "여름"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[2] == true, appDelegate.clothInfo[i].getSeaCate() == "가을"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[3] == true, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                       }
+                       if list_bclo[j] == true, j == 1, appDelegate.clothInfo[i].getCloCate() == "하의"{
+                           print("pass")
+                           if list_bsea[0] == true, appDelegate.clothInfo[i].getSeaCate() == "봄"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[1] == true, appDelegate.clothInfo[i].getSeaCate() == "여름"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[2] == true, appDelegate.clothInfo[i].getSeaCate() == "가을"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[3] == true, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                       }
+                       if list_bclo[j] == true, j == 2, appDelegate.clothInfo[i].getCloCate() == "아우터"{
+                           print("pass")
+                           if list_bsea[0] == true , appDelegate.clothInfo[i].getSeaCate() == "봄"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[1] == true, appDelegate.clothInfo[i].getSeaCate() == "여름"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[2] == true, appDelegate.clothInfo[i].getSeaCate() == "가을"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[3] == true, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                       }
+                       if list_bclo[j] == true, j == 3, appDelegate.clothInfo[i].getCloCate() == "신발"{
+                           print("pass")
+                           if list_bsea[0] == true, appDelegate.clothInfo[i].getSeaCate() == "봄"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[1] == true, appDelegate.clothInfo[i].getSeaCate() == "여름"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[2] == true, appDelegate.clothInfo[i].getSeaCate() == "가을"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                           if list_bsea[3] == true, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
+                               tmp_list.append(appDelegate.clothInfo[i])
+                               print("append: ", appDelegate.clothInfo[i].getCloCate())
+                           }
+                       }
+                       
+                   }
+               }
+                       if !list_bclo.contains(true) {
+                           for i in 0..<Int(appDelegate.clothInfo.count) {
+                               print(appDelegate.clothInfo.count)
+                               for j in 0...3{
+                                   if list_bsea[j] == true, j == 0, appDelegate.clothInfo[i].getSeaCate() == "봄"{
+                                       tmp_list.append(appDelegate.clothInfo[i])
+                                   }
+                                   if list_bsea[j] == true, j == 1, appDelegate.clothInfo[i].getSeaCate() == "여름"{
+                                       tmp_list.append(appDelegate.clothInfo[i])
+                                   }
+                                   if list_bsea[j] == true, j == 2, appDelegate.clothInfo[i].getSeaCate() == "가을"{
+                                       tmp_list.append(appDelegate.clothInfo[i])
+                                   }
+                                   if list_bsea[j] == true, j == 3, appDelegate.clothInfo[i].getSeaCate() == "겨울"{
+                                       tmp_list.append(appDelegate.clothInfo[i])
+                                   }
+                                   
+                               }
+                       }
+                       }
+                       if !list_bsea.contains(true) {
+                           for i in 0..<Int(appDelegate.clothInfo.count) {
+                               print(appDelegate.clothInfo.count)
+                               for j in 0...3{
+                                   if list_bclo[j] == true, j == 0, appDelegate.clothInfo[i].getCloCate() == "상의"{
+                                       tmp_list.append(appDelegate.clothInfo[i])
+                                   }
+                                   if list_bclo[j] == true, j == 1, appDelegate.clothInfo[i].getCloCate() == "하의"{
+                                       tmp_list.append(appDelegate.clothInfo[i])
+                                   }
+                                   if list_bclo[j] == true, j == 2, appDelegate.clothInfo[i].getCloCate() == "아우터"{
+                                       tmp_list.append(appDelegate.clothInfo[i])
+                                   }
+                                   if list_bclo[j] == true, j == 3, appDelegate.clothInfo[i].getCloCate() == "신발"{
+                                       tmp_list.append(appDelegate.clothInfo[i])
+                                   }
+                                   
+                               }
+                       }
+                       }
         
         print(list_bclo)
         //print(appDelegate.clothInfo[0].getCloCate())
